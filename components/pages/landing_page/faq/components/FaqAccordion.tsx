@@ -1,7 +1,9 @@
 "use client";
 
 import { useState } from "react";
-import { ChevronDown, ChevronUp } from "lucide-react";
+import { ChevronDown } from "lucide-react";
+import { motion, AnimatePresence } from "framer-motion";
+import { useLanguage } from "@/lib/i18n/LanguageProvider";
 
 interface FaqItemProps {
   question: string;
@@ -12,76 +14,66 @@ interface FaqItemProps {
 
 function FaqItem({ question, answer, isOpen, onClick }: FaqItemProps) {
   return (
-    <div 
+    <div
       className={`flex flex-col border rounded-xl overflow-hidden transition-colors duration-300 ${
-        isOpen ? "border-[#2dc5f4]/30 bg-[#0c121e]" : "border-white/[0.08] bg-[#0c121e] hover:border-white/[0.15]"
+        isOpen ? "border-[var(--color-accent)]/30 bg-[var(--color-surface-elevated)]" : "border-[var(--color-border)] bg-[var(--color-surface-elevated)] hover:border-[var(--color-border-hover)]"
       }`}
     >
-      <button 
+      <button
         type="button"
         onClick={onClick}
-        className="flex items-center justify-between w-full p-6 text-left"
+        className="flex items-center justify-between w-full px-6 py-5 text-left rtl:text-right"
       >
-        <span className="text-white font-medium text-base">{question}</span>
-        {isOpen ? (
-          <ChevronUp className="w-5 h-5 text-[#2dc5f4] shrink-0 ml-4" />
-        ) : (
-          <ChevronDown className="w-5 h-5 text-[#2dc5f4] shrink-0 ml-4" />
-        )}
+        <span className="text-[var(--color-text-primary)] font-medium text-[15px]">{question}</span>
+        <motion.div
+          animate={{ rotate: isOpen ? 180 : 0 }}
+          transition={{ type: "spring", stiffness: 300, damping: 25 }}
+        >
+          <ChevronDown className="w-4 h-4 text-[var(--color-accent)] shrink-0 ltr:ml-4 rtl:mr-4" />
+        </motion.div>
       </button>
 
-      {/* Answer content */}
-      <div 
-        className={`grid transition-all duration-300 ease-in-out ${
-          isOpen ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0"
-        }`}
-      >
-        <div className="overflow-hidden">
-          <div className="px-6 pb-6 pt-2">
-            <div className="w-full h-[1px] bg-white/[0.05] mb-6" />
-            <p className="text-slate-400 text-[15px] leading-relaxed">
-              {answer}
-            </p>
-          </div>
-        </div>
-      </div>
+      {/* Answer content with Framer Motion */}
+      <AnimatePresence initial={false}>
+        {isOpen && (
+          <motion.div
+            initial={{ height: 0, opacity: 0 }}
+            animate={{ height: "auto", opacity: 1 }}
+            exit={{ height: 0, opacity: 0 }}
+            transition={{ type: "spring", stiffness: 300, damping: 30 }}
+            className="overflow-hidden"
+          >
+            <div className="px-6 pb-5 pt-0">
+              <p className="text-[var(--color-text-secondary)] text-[14px] leading-relaxed rtl:text-right">
+                {answer}
+              </p>
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </div>
   );
 }
 
 export function FaqAccordion() {
   const [openIndex, setOpenIndex] = useState<number>(0);
+  const { t } = useLanguage();
 
   const faqs = [
-    {
-      question: "Do You Follow A Specific Methodology For Project Development",
-      answer: "Yes, We Adopt An Agile Methodology To Guarantee On-Time Delivery, Adaptability To Changes, And Maximum Customer Satisfaction."
-    },
-    {
-      question: "What Core Services Does Square Solution Provide",
-      answer: "We offer end-to-end digital solutions including custom software development, digital marketing, IT managed services, cloud infrastructure, and consulting to transform your business operations."
-    },
-    {
-      question: "Can You Help Startups With Limited Budgets",
-      answer: "Absolutely. We work closely with startups to prioritize essential features, outline MVP strategies, and deliver cost-effective solutions without compromising on quality."
-    },
-    {
-      question: "How Do You Support Established Brands In Their Digital Journey",
-      answer: "We provide scalable enterprise-grade architectures, system integrations, workflow automations, and targeted marketing campaigns to help establish brands reach new milestones."
-    },
-    {
-      question: "How Can I Start A Project With You",
-      answer: "You can use our 'Book Your Free Consultation' form or directly email us. We will schedule an initial meeting to discuss your goals, analyze requirements, and create a roadmap."
-    }
+    { question: t.faq.q1, answer: t.faq.a1 },
+    { question: t.faq.q2, answer: t.faq.a2 },
+    { question: t.faq.q3, answer: t.faq.a3 },
+    { question: t.faq.q4, answer: t.faq.a4 },
+    { question: t.faq.q5, answer: t.faq.a5 }
   ];
 
   return (
     <div className="flex flex-col gap-4 w-full">
       {faqs.map((faq, idx) => (
-        <FaqItem 
-          key={idx} 
-          question={faq.question} 
-          answer={faq.answer} 
+        <FaqItem
+          key={idx}
+          question={faq.question}
+          answer={faq.answer}
           isOpen={openIndex === idx}
           onClick={() => setOpenIndex(openIndex === idx ? -1 : idx)}
         />

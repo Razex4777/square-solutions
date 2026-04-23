@@ -1,24 +1,30 @@
+"use client";
+
 import { Mail, Facebook, Linkedin } from 'lucide-react';
+import { motion } from 'framer-motion';
+import { useLanguage } from '@/lib/i18n/LanguageProvider';
 
 export function ContactInfo() {
+  const { t } = useLanguage();
+
   const infoCards = [
     {
-      icon: <Mail className="w-5 h-5 text-[#2dc5f4]" />,
-      label: "Email",
+      icon: <Mail className="w-5 h-5 text-[var(--color-accent)]" />,
+      label: t.contact.emailLabel,
       value: "Info@Sq-Solution.Com",
       isLink: false,
       highlight: false,
     },
     {
-      icon: <Facebook className="w-5 h-5 text-[#2dc5f4]" />,
-      label: "Facebook",
+      icon: <Facebook className="w-5 h-5 text-[var(--color-accent)]" />,
+      label: t.contact.facebookLabel,
       value: "Square Solutions",
       isLink: true,
-      highlight: true, // Has the cyan border in screenshot
+      highlight: true,
     },
     {
-      icon: <Linkedin className="w-5 h-5 text-[#2dc5f4]" />,
-      label: "Linkedin",
+      icon: <Linkedin className="w-5 h-5 text-[var(--color-accent)]" />,
+      label: t.contact.linkedinLabel,
       value: "Square Solutions",
       isLink: true,
       highlight: false,
@@ -26,33 +32,35 @@ export function ContactInfo() {
   ];
 
   return (
-    <div className="flex flex-col gap-6 w-full">
+    <div className="flex flex-col gap-4 w-full">
       {infoCards.map((card, idx) => (
-        <div 
+        <motion.div
           key={idx}
-          className={`flex items-center p-6 rounded-2xl bg-[#0c121e] border transition-colors ${
+          whileHover={{ x: 4 }}
+          transition={{ type: "spring", stiffness: 400, damping: 25 }}
+          className={`flex items-center py-4 px-5 rounded-xl bg-[var(--color-surface-elevated)] border transition-colors duration-300 ${
             card.highlight
-              ? 'border-[#2dc5f4]/60 shadow-[inset_0_0_20px_rgba(45,197,244,0.05)]'
-              : 'border-white/[0.08] hover:border-white/[0.15]'
+              ? 'border-[var(--color-accent)] shadow-[inset_0_0_20px_var(--color-glow)]'
+              : 'border-[var(--color-border)] hover:border-[var(--color-accent)]/50'
           }`}
         >
           {/* Icon Box */}
-          <div className="w-12 h-12 rounded-lg bg-[#112031] flex items-center justify-center shrink-0 mr-6">
+          <div className="w-10 h-10 rounded-lg bg-[var(--color-surface-card)] border border-[var(--color-border)] flex items-center justify-center shrink-0 mr-4">
             {card.icon}
           </div>
 
           {/* Text Container */}
           <div className="flex flex-col">
-            <span className="text-xs text-[#9ba8b8] mb-1">{card.label}</span>
+            <span className="text-xs text-[var(--color-text-muted)] mb-0.5">{card.label}</span>
             {card.isLink ? (
-              <a href="#" className="text-[#f8fafc] font-medium text-[15px] underline underline-offset-4 decoration-white/30 hover:decoration-white transition-colors">
+              <a href="#" className="text-[var(--color-text-primary)] font-medium text-sm underline underline-offset-4 decoration-[var(--color-border)] hover:decoration-[var(--color-accent)] transition-colors">
                 {card.value}
               </a>
             ) : (
-              <span className="text-[#f8fafc] font-medium text-[15px]">{card.value}</span>
+              <span className="text-[var(--color-text-primary)] font-medium text-sm">{card.value}</span>
             )}
           </div>
-        </div>
+        </motion.div>
       ))}
     </div>
   );

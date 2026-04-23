@@ -3,7 +3,6 @@
 import { useRef } from 'react';
 import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { HeroContent } from './components/HeroContent';
 import { HeroGraphic } from './components/HeroGraphic';
 
@@ -46,9 +45,9 @@ export function Hero() {
   }, { scope: container });
 
   return (
-    <section ref={container} className="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden flex flex-col items-center">
+    <section ref={container} className="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden flex flex-col items-center bg-[var(--color-surface)] transition-colors duration-300">
       {/* Background radial gradient subtle effect */}
-      <div className="hero-bg-glow absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-[#2dc5f4]/5 rounded-full blur-[120px] pointer-events-none" />
+      <div className="hero-bg-glow absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-[var(--color-accent)]/5 rounded-full blur-[120px] pointer-events-none" />
 
       <div className="w-full max-w-[1600px] mx-auto px-6 sm:px-8 md:px-12 lg:px-20 relative z-10 flex-1">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-12 items-center min-h-[60vh]">

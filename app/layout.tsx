@@ -1,7 +1,9 @@
 import type {Metadata} from 'next';
 import { Outfit } from 'next/font/google';
-import './globals.css'; // Global styles
+import './globals.css';
 import { SmoothScroll } from '@/components/SmoothScroll';
+import { ThemeProvider } from '@/components/ThemeProvider';
+import { LanguageProvider } from '@/lib/i18n/LanguageProvider';
 
 const outfit = Outfit({
   subsets: ['latin'],
@@ -9,15 +11,24 @@ const outfit = Outfit({
 });
 
 export const metadata: Metadata = {
-  title: 'Square Solutions',
-  description: 'Digital Transformation Partner',
+  title: 'Square Solutions | Innovative Digital Transformation',
+  description: 'Square Solutions is your premier partner for end-to-end digital transformation. We deliver cutting-edge software development, enterprise-grade architectures, cloud infrastructure, and data-driven marketing campaigns to scale your business into the future.',
+  icons: {
+    icon: '/favicon.webp',
+    shortcut: '/favicon.webp',
+    apple: '/apple-touch-icon.png',
+  },
 };
 
 export default function RootLayout({children}: {children: React.ReactNode}) {
   return (
-    <html lang="en" className={outfit.variable}>
-      <body className="font-sans bg-[#0A0D14] text-slate-200 antialiased" suppressHydrationWarning>
-        <SmoothScroll>{children}</SmoothScroll>
+    <html lang="en" className={outfit.variable} suppressHydrationWarning>
+      <body className="font-sans bg-[var(--color-surface)] text-[var(--color-text-primary)] antialiased transition-colors duration-300" suppressHydrationWarning>
+        <ThemeProvider>
+          <LanguageProvider>
+            <SmoothScroll>{children}</SmoothScroll>
+          </LanguageProvider>
+        </ThemeProvider>
       </body>
     </html>
   );

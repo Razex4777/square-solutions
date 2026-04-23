@@ -1,41 +1,47 @@
+"use client";
+
 import { MonitorSmartphone, PhoneCall, Bot, CloudCog, Globe, Megaphone } from 'lucide-react';
+import { motion } from 'framer-motion';
+import { useLanguage } from '@/lib/i18n/LanguageProvider';
 
 export function ServicesCards() {
+  const { t } = useLanguage();
+
   const services = [
     {
-      icon: <MonitorSmartphone className="w-5 h-5 text-[#2dc5f4]" />,
-      title: "Software Applications & Solutions",
-      description: "We Design And Develop Smart, Scalable Software Solutions And Web Applications Tailored To Your Business Needs.",
+      icon: <MonitorSmartphone className="w-5 h-5 text-[var(--color-accent)]" />,
+      title: t.services.softwareTitle,
+      description: t.services.softwareDesc,
       highlight: false,
     },
     {
-      icon: <PhoneCall className="w-5 h-5 text-[#2dc5f4]" />,
-      title: "Consulting Services",
-      description: "We Support Businesses At Early And Growth Stages By Providing Expert Consultancy. Our Guidance Focuses On Identifying Fair, Effective, And Purpose-Driven Digital Solutions.",
+      icon: <PhoneCall className="w-5 h-5 text-[var(--color-accent)]" />,
+      title: t.services.consultingTitle,
+      description: t.services.consultingDesc,
       highlight: false,
     },
     {
-      icon: <Bot className="w-5 h-5 text-[#2dc5f4]" />,
-      title: "IT Managed Services",
-      description: "Our IT Managed Services Implement Standardized Best Practices To Streamline Your Operations. From System Design To Ongoing Support, We Build Secure, Efficient IT Service Environments",
+      icon: <Bot className="w-5 h-5 text-[var(--color-accent)]" />,
+      title: t.services.itTitle,
+      description: t.services.itDesc,
       highlight: false,
     },
     {
-      icon: <CloudCog className="w-5 h-5 text-[#2dc5f4]" />,
-      title: "Digital Workplace & Infrastructure",
-      description: "Rethink The Digital Workplace By Building Flexible Infrastructures That Support Modern Workstyles. Our Solutions Are Designed To Enhance Collaboration, Productivity.",
-      highlight: true, // This one has the colored border in the screenshot
+      icon: <CloudCog className="w-5 h-5 text-[var(--color-accent)]" />,
+      title: t.services.infraTitle,
+      description: t.services.infraDesc,
+      highlight: true,
     },
     {
-      icon: <Globe className="w-5 h-5 text-[#2dc5f4]" />,
-      title: "Digital Marketing",
-      description: "We Develop Data-Driven Digital Marketing Strategies That Increase Brand Visibility, Attract Qualified Leads, And Drive Customer Engagement. From SEO To Paid Campaigns.",
+      icon: <Globe className="w-5 h-5 text-[var(--color-accent)]" />,
+      title: t.services.marketingTitle,
+      description: t.services.marketingDesc,
       highlight: false,
     },
     {
-      icon: <Megaphone className="w-5 h-5 text-[#2dc5f4]" />,
-      title: "Social Media Management",
-      description: "Our Social Media Management Services Create A Cohesive Brand Presence Across Platforms. We Handle Content Planning, Publishing, Engagement, And Analytics To Build Meaningful.",
+      icon: <Megaphone className="w-5 h-5 text-[var(--color-accent)]" />,
+      title: t.services.socialTitle,
+      description: t.services.socialDesc,
       highlight: false,
     }
   ];
@@ -43,39 +49,41 @@ export function ServicesCards() {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8 w-full">
       {services.map((service, idx) => (
-        <div 
+        <motion.div
           key={idx}
-          className={`group relative rounded-2xl p-8 lg:p-12 flex flex-col bg-[#0c121e] border transition-all duration-300 overflow-hidden ${
-            service.highlight 
-              ? 'border-[#12e399]/50 shadow-[inset_0_0_80px_rgba(18,227,153,0.05)]' 
-              : 'border-white/[0.08] hover:border-white/[0.15] shadow-[inset_0_0_80px_rgba(45,197,244,0.02)]'
+          className={`service-card group relative rounded-xl p-6 lg:p-8 flex flex-col bg-[var(--color-surface-card)] backdrop-blur-sm border overflow-hidden transition-colors duration-300 ${
+            service.highlight
+              ? 'border-[#12e399]/40'
+              : 'border-[var(--color-border)]'
           }`}
+          whileHover={{
+            y: -5,
+            transition: { type: "spring", stiffness: 300, damping: 20 }
+          }}
         >
-          {/* Glowing inner effect covering the bottom/center area */}
-          <div className={`absolute inset-0 opacity-40 transition-opacity duration-300 pointer-events-none ${
-            service.highlight 
-              ? 'bg-[radial-gradient(circle_at_center,rgba(18,227,153,0.12),transparent_70%)]' 
-              : 'bg-[radial-gradient(circle_at_center,rgba(45,197,244,0.06),transparent_80%)] group-hover:bg-[radial-gradient(circle_at_center,rgba(45,197,244,0.1),transparent_80%)]'
-          }`} />
+          {/* Hover glow overlay */}
+          {!service.highlight && (
+            <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_left,var(--color-glow-strong),transparent_70%)] opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
+          )}
 
-          {/* Inner top glow for highlighted card specifically */}
+          {/* Persistent glow for highlighted card */}
           {service.highlight && (
-             <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[80%] h-32 bg-[radial-gradient(ellipse_at_top,rgba(45,197,244,0.15)_0%,transparent_70%)] pointer-events-none" />
+            <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_left,rgba(18,227,153,0.06),transparent_70%)] pointer-events-none" />
           )}
 
           {/* Icon Box */}
-          <div className="relative z-10 w-14 h-14 rounded-xl bg-[#112031] flex items-center justify-center mb-8 self-start shrink-0 shadow-[0_0_20px_rgba(45,197,244,0.08)]">
+          <div className="relative z-10 w-10 h-10 rounded-lg bg-[var(--color-surface-elevated)] flex items-center justify-center mb-5 self-start shrink-0 border border-[var(--color-border)] group-hover:border-[var(--color-accent)]/20 group-hover:shadow-[0_0_12px_var(--color-card-hover-shadow)] transition-all duration-500">
             {service.icon}
           </div>
 
-          <h3 className="relative z-10 text-2xl font-bold text-white mb-4">
+          <h3 className="relative z-10 text-lg lg:text-xl font-semibold text-[var(--color-text-primary)] mb-3 transition-colors duration-300 group-hover:text-[var(--color-accent)]">
             {service.title}
           </h3>
 
-          <p className="relative z-10 text-[#9ba8b8] text-[15px] lg:text-base leading-relaxed">
+          <p className="relative z-10 text-[var(--color-text-secondary)] text-sm leading-relaxed">
             {service.description}
           </p>
-        </div>
+        </motion.div>
       ))}
     </div>
   );

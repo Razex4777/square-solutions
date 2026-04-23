@@ -9,7 +9,7 @@ import { Footer } from '@/components/pages/landing_page/footer/Footer';
 
 export default function Page() {
   return (
-    <main className="min-h-screen bg-[#0A0D14] flex flex-col font-sans">
+    <main className="min-h-screen bg-[var(--color-surface)] flex flex-col font-sans transition-colors duration-300">
       <Navbar />
       <Hero />
       <About />

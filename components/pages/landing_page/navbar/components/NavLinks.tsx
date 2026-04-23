@@ -1,16 +1,31 @@
+"use client";
+
+import { motion } from "framer-motion";
+import { useLanguage } from "@/lib/i18n/LanguageProvider";
+
 export function NavLinks() {
-  const links = ['Home', 'About Us', 'Our Services', 'FAQ'];
+  const { t, isRTL } = useLanguage();
+  
+  const links = [
+    { label: t.nav.home, id: 'home' },
+    { label: t.nav.aboutUs, id: 'about-us' },
+    { label: t.nav.ourServices, id: 'our-services' },
+    { label: t.nav.faq, id: 'faq' }
+  ];
 
   return (
-    <nav className="hidden md:flex items-center gap-8">
+    <nav className="hidden md:flex items-center gap-1">
       {links.map((link) => (
-        <a 
-          key={link} 
-          href={`#${link.toLowerCase().replace(' ', '-')}`}
-          className="text-sm font-medium text-slate-300 hover:text-white transition-colors"
+        <motion.a
+          key={link.id}
+          href={`#${link.id}`}
+          className="relative px-4 py-2 text-sm font-medium text-[var(--color-text-secondary)] hover:text-[var(--color-accent)] transition-colors rounded-lg"
+          whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 0.97 }}
+          transition={{ type: "spring", stiffness: 400, damping: 25 }}
         >
-          {link}
-        </a>
+          {link.label}
+        </motion.a>
       ))}
     </nav>
   );
