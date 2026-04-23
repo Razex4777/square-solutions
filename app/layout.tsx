@@ -22,8 +22,8 @@ export const metadata: Metadata = {
 
 export default function RootLayout({children}: {children: React.ReactNode}) {
   return (
-    <html lang="en" className={outfit.variable} suppressHydrationWarning>
-      <body className="font-sans bg-[var(--color-surface)] text-[var(--color-text-primary)] antialiased transition-colors duration-300" suppressHydrationWarning>
+    <html lang="en" className={`${outfit.variable} overflow-x-hidden`} suppressHydrationWarning>
+      <body className="font-sans bg-[var(--color-surface)] text-[var(--color-text-primary)] antialiased transition-colors duration-300 overflow-x-hidden w-full relative" suppressHydrationWarning>
         <ThemeProvider>
           <LanguageProvider>
             <SmoothScroll>{children}</SmoothScroll>

@@ -29,14 +29,14 @@ export function HeroContent() {
       </p>
 
       {/* Buttons */}
-      <div className="flex flex-wrap items-center gap-4 w-full">
+      <div className="flex flex-col sm:flex-row items-center gap-4 w-full">
         <motion.button
           type="button"
           onClick={() => document.getElementById('contact-us')?.scrollIntoView({ behavior: 'smooth' })}
           whileHover={{ scale: 1.03, boxShadow: "0 0 30px rgba(45, 197, 244, 0.25)" }}
           whileTap={{ scale: 0.97 }}
           transition={{ type: "spring", stiffness: 400, damping: 25 }}
-          className="px-6 sm:px-8 py-3.5 text-sm font-semibold text-black bg-gradient-to-r from-[#2dc5f4] to-[#12e399] hover:opacity-95 transition-opacity rounded-lg"
+          className="w-full sm:w-auto px-6 sm:px-8 py-3.5 text-sm font-semibold text-black bg-gradient-to-r from-[#2dc5f4] to-[#12e399] hover:opacity-95 transition-opacity rounded-lg"
         >
           {t.hero.ctaPrimary}
         </motion.button>
@@ -46,7 +46,7 @@ export function HeroContent() {
           whileHover={{ scale: 1.03 }}
           whileTap={{ scale: 0.97 }}
           transition={{ type: "spring", stiffness: 400, damping: 25 }}
-          className="px-6 sm:px-8 py-3.5 text-sm font-semibold text-[#12e399] border hover:bg-[#12e399]/5 transition-colors border-[var(--color-border)] rounded-lg"
+          className="w-full sm:w-auto px-6 sm:px-8 py-3.5 text-sm font-semibold text-[#12e399] border hover:bg-[#12e399]/5 transition-colors border-[var(--color-border)] rounded-lg"
         >
           {t.hero.ctaSecondary}
         </motion.button>

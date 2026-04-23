@@ -38,15 +38,16 @@ export function Navbar() {
             : 'bg-transparent border-b border-transparent'
         }`}
       >
-        <div className="w-full max-w-[1600px] mx-auto px-6 sm:px-8 md:px-12 lg:px-20 h-20 flex items-center justify-between">
+        <div className="w-full max-w-[1600px] mx-auto px-4 sm:px-8 md:px-12 lg:px-20 h-20 flex items-center justify-between">
           <NavLogo />
           <NavLinks />
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-1.5 sm:gap-3 shrink-0">
             <NavActions />
             {/* Mobile hamburger */}
             <button
               onClick={() => setMobileOpen(!mobileOpen)}
-              className="md:hidden w-10 h-10 rounded-lg border border-[var(--color-border)] flex items-center justify-center text-[var(--color-text-secondary)] hover:text-[var(--color-accent)] transition-colors"
+              className="md:hidden flex w-10 h-10 shrink-0 rounded-lg border border-[var(--color-border)] items-center justify-center text-[var(--color-text-secondary)] hover:text-[var(--color-accent)] transition-colors bg-[var(--color-surface)]"
+              aria-label="Toggle menu"
             >
               {mobileOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
             </button>

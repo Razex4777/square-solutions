@@ -16,7 +16,7 @@ export function NavActions() {
   const toggleTheme = () => setTheme(theme === 'dark' ? 'light' : 'dark');
 
   return (
-    <div className="flex items-center gap-2 sm:gap-3">
+    <div className="flex items-center gap-1.5 sm:gap-3 shrink-0">
       {/* Theme Toggle */}
       <motion.button
         onClick={toggleTheme}
