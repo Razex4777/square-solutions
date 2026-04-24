@@ -30,20 +30,26 @@ export function Footer() {
 
              <div className="flex items-center gap-4">
                <span className={`text-[var(--color-text-secondary)] text-sm ${isRTL ? 'pl-2' : 'pr-2'}`}>{t.footer.followUs}</span>
-               <motion.button
+               <motion.a
+                 href="https://facebook.com"
+                 target="_blank"
+                 rel="noopener noreferrer"
                  whileHover={{ scale: 1.1, y: -2 }}
                  whileTap={{ scale: 0.95 }}
-                 className="w-10 h-10 rounded-lg border border-[var(--color-border)] bg-[var(--color-surface-elevated)] flex items-center justify-center text-[var(--color-accent)] hover:bg-[var(--color-accent)]/5 transition-all"
+                 className="w-10 h-10 rounded-lg border border-[var(--color-border)] bg-[var(--color-surface-elevated)] flex items-center justify-center text-[var(--color-accent)] hover:bg-[var(--color-accent)]/5 hover:border-[var(--color-accent)]/30 hover:shadow-[0_0_15px_rgba(45,197,244,0.15)] transition-all duration-300"
                >
                   <Facebook className="w-5 h-5 fill-current" />
-               </motion.button>
-               <motion.button
+               </motion.a>
+               <motion.a
+                 href="https://linkedin.com"
+                 target="_blank"
+                 rel="noopener noreferrer"
                  whileHover={{ scale: 1.1, y: -2 }}
                  whileTap={{ scale: 0.95 }}
-                 className="w-10 h-10 rounded-lg border border-[var(--color-border)] bg-[var(--color-surface-elevated)] flex items-center justify-center text-[var(--color-accent)] hover:bg-[var(--color-accent)]/5 transition-all"
+                 className="w-10 h-10 rounded-lg border border-[var(--color-border)] bg-[var(--color-surface-elevated)] flex items-center justify-center text-[var(--color-accent)] hover:bg-[var(--color-accent)]/5 hover:border-[var(--color-accent)]/30 hover:shadow-[0_0_15px_rgba(45,197,244,0.15)] transition-all duration-300"
                >
                   <Linkedin className="w-5 h-5 fill-current" />
-               </motion.button>
+               </motion.a>
              </div>
           </div>
 
