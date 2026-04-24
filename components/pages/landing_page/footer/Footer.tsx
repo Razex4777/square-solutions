@@ -8,6 +8,9 @@ import { useLanguage } from "@/lib/i18n/LanguageProvider";
 export function Footer() {
   const { t, isRTL } = useLanguage();
 
+  const facebookUrl = process.env.NEXT_PUBLIC_FACEBOOK_URL || 'https://facebook.com';
+  const linkedinUrl = process.env.NEXT_PUBLIC_LINKEDIN_URL || 'https://linkedin.com';
+
   return (
     <footer className="w-full bg-[var(--color-surface)] border-t border-[var(--color-border)] flex flex-col items-center px-6 sm:px-8 md:px-12 lg:px-20 pt-20 pb-8 relative z-10 transition-colors duration-300 overflow-hidden">
        {/* Atmospheric blue glow — left to right sweep */}
@@ -31,7 +34,7 @@ export function Footer() {
              <div className="flex items-center gap-4">
                <span className={`text-[var(--color-text-secondary)] text-sm ${isRTL ? 'pl-2' : 'pr-2'}`}>{t.footer.followUs}</span>
                <motion.a
-                 href="https://facebook.com"
+                 href={facebookUrl}
                  target="_blank"
                  rel="noopener noreferrer"
                  whileHover={{ scale: 1.1, y: -2 }}
@@ -41,7 +44,7 @@ export function Footer() {
                   <Facebook className="w-5 h-5 fill-current" />
                </motion.a>
                <motion.a
-                 href="https://linkedin.com"
+                 href={linkedinUrl}
                  target="_blank"
                  rel="noopener noreferrer"
                  whileHover={{ scale: 1.1, y: -2 }}
