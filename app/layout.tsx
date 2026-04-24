@@ -4,6 +4,8 @@ import './globals.css';
 import { SmoothScroll } from '@/components/SmoothScroll';
 import { ThemeProvider } from '@/components/ThemeProvider';
 import { LanguageProvider } from '@/lib/i18n/LanguageProvider';
+import { Preloader } from '@/components/ui/Preloader';
+import { Analytics } from '@vercel/analytics/next';
 
 const outfit = Outfit({
   subsets: ['latin'],
@@ -26,7 +28,9 @@ export default function RootLayout({children}: {children: React.ReactNode}) {
       <body className="font-sans bg-[var(--color-surface)] text-[var(--color-text-primary)] antialiased transition-colors duration-300 overflow-x-hidden w-full relative" suppressHydrationWarning>
         <ThemeProvider>
           <LanguageProvider>
+            <Preloader />
             <SmoothScroll>{children}</SmoothScroll>
+            <Analytics />
           </LanguageProvider>
         </ThemeProvider>
       </body>

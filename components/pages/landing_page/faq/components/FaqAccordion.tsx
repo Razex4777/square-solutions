@@ -56,7 +56,7 @@ function FaqItem({ question, answer, isOpen, onClick }: FaqItemProps) {
 }
 
 export function FaqAccordion({ onActiveChange }: { onActiveChange?: (index: number) => void }) {
-  const [openIndex, setOpenIndex] = useState<number>(0);
+  const [openIndex, setOpenIndex] = useState<number>(-1);
   const { t } = useLanguage();
 
   const handleClick = (idx: number) => {

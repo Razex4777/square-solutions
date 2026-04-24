@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-04-24 11:17
+
+### Vercel Analytics Integration
+- **`app/layout.tsx`**: Imported and mounted the `<Analytics />` component from `@vercel/analytics/next` to enable page view tracking and visitor analytics on Vercel.
+- **`package.json`**: Added `@vercel/analytics` dependency.
+
 ## 2026-04-24 12:50
 
 ### 3D Parallax TiltCard Implementation

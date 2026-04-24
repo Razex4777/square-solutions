@@ -8,7 +8,7 @@ import { FaqImage } from "./components/FaqImage";
 
 export function Faq() {
   const container = useRef<HTMLElement>(null);
-  const [activeFaqIndex, setActiveFaqIndex] = useState(0);
+  const [activeFaqIndex, setActiveFaqIndex] = useState(-1);
 
   useGSAP(() => {
     // Parallax on the image
