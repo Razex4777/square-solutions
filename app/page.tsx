@@ -1,5 +1,6 @@
 import { Navbar } from '@/components/pages/landing_page/navbar/Navbar';
 import { Hero } from '@/components/pages/landing_page/hero/Hero';
+import { PartnersMarquee } from '@/components/pages/landing_page/partners/PartnersMarquee';
 import { About } from '@/components/pages/landing_page/about/About';
 import { Services } from '@/components/pages/landing_page/services/Services';
 import { Faq } from '@/components/pages/landing_page/faq/Faq';
@@ -12,6 +13,7 @@ export default function Page() {
     <main className="min-h-screen bg-[var(--color-surface)] flex flex-col font-sans transition-colors duration-300">
       <Navbar />
       <Hero />
+      <PartnersMarquee />
       <About />
       <Services />
       <Contact />

@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef } from 'react';
+import { useRef, useState } from 'react';
 import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
 import { FaqContent } from "./components/FaqContent";
@@ -8,6 +8,7 @@ import { FaqImage } from "./components/FaqImage";
 
 export function Faq() {
   const container = useRef<HTMLElement>(null);
+  const [activeFaqIndex, setActiveFaqIndex] = useState(0);
 
   useGSAP(() => {
     // Parallax on the image
@@ -54,14 +55,14 @@ export function Faq() {
       <div className="w-full max-w-[1600px] mx-auto px-6 sm:px-8 md:px-12 lg:px-20 relative z-10 flex flex-col items-center">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 xl:gap-24 w-full items-stretch">
 
-          {/* Left Side: Image with parallax */}
+          {/* Left Side: Image with parallax — swaps per active FAQ */}
           <div className="w-full h-full order-2 lg:order-1 faq-image-parallax">
-            <FaqImage />
+            <FaqImage activeIndex={activeFaqIndex} />
           </div>
 
           {/* Right Side: Questions Accordion */}
           <div className="faq-content-anim w-full flex flex-col justify-center order-1 lg:order-2 py-8">
-            <FaqContent />
+            <FaqContent onActiveChange={setActiveFaqIndex} />
           </div>
         </div>
       </div>

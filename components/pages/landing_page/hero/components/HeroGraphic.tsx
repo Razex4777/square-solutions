@@ -11,7 +11,7 @@ interface OrbitTagProps {
 function OrbitTag({ label, dotColor = "#12e399" }: OrbitTagProps) {
   return (
     <div
-      className="flex items-center gap-2 px-3 py-1.5 sm:px-4 sm:py-2 rounded-full border border-[#1b2b3a]/60 bg-[#0f1923]/80 backdrop-blur-md shadow-[0_0_20px_rgba(15,25,35,0.8)] z-20 whitespace-nowrap"
+      className="flex items-center gap-2 px-3 py-1.5 sm:px-4 sm:py-2 rounded-full border border-[var(--color-border)] bg-[var(--color-surface-elevated)]/80 backdrop-blur-md shadow-lg z-20 whitespace-nowrap"
     >
       <motion.div
         animate={{ scale: [1, 1.5, 1], opacity: [0.7, 1, 0.7] }}
@@ -19,7 +19,7 @@ function OrbitTag({ label, dotColor = "#12e399" }: OrbitTagProps) {
         className="w-1.5 h-1.5 sm:w-2 sm:h-2 rounded-full"
         style={{ backgroundColor: dotColor, boxShadow: `0 0 10px ${dotColor}` }}
       />
-      <span className="text-xs sm:text-sm font-medium tracking-wide text-slate-200">
+      <span className="text-xs sm:text-sm font-medium tracking-wide text-[var(--color-text-primary)]">
         {label}
       </span>
     </div>
@@ -52,7 +52,7 @@ export function HeroGraphic() {
       </motion.div>
 
       {/* Orbit 1: Outer Ring */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[90%] h-[90%] border border-slate-800/50 rounded-full shadow-[inset_0_0_20px_rgba(0,0,0,0.2)]" />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[90%] h-[90%] border border-[var(--color-border)] rounded-full" />
       <motion.div
         animate={{ rotate: 360 }}
         transition={{ duration: 60, repeat: Infinity, ease: "linear" }}
@@ -79,7 +79,7 @@ export function HeroGraphic() {
       </motion.div>
 
       {/* Orbit 2: Middle Ring */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[65%] h-[65%] border border-slate-700/40 rounded-full shadow-[inset_0_0_20px_rgba(0,0,0,0.2)]" />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[65%] h-[65%] border border-[var(--color-border)] rounded-full" />
       <motion.div
         animate={{ rotate: -360 }}
         transition={{ duration: 45, repeat: Infinity, ease: "linear" }}

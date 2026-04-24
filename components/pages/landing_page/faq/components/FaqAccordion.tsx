@@ -55,9 +55,15 @@ function FaqItem({ question, answer, isOpen, onClick }: FaqItemProps) {
   );
 }
 
-export function FaqAccordion() {
+export function FaqAccordion({ onActiveChange }: { onActiveChange?: (index: number) => void }) {
   const [openIndex, setOpenIndex] = useState<number>(0);
   const { t } = useLanguage();
+
+  const handleClick = (idx: number) => {
+    const newIndex = openIndex === idx ? -1 : idx;
+    setOpenIndex(newIndex);
+    onActiveChange?.(newIndex);
+  };
 
   const faqs = [
     { question: t.faq.q1, answer: t.faq.a1 },
@@ -75,7 +81,7 @@ export function FaqAccordion() {
           question={faq.question}
           answer={faq.answer}
           isOpen={openIndex === idx}
-          onClick={() => setOpenIndex(openIndex === idx ? -1 : idx)}
+          onClick={() => handleClick(idx)}
         />
       ))}
     </div>

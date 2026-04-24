@@ -3,7 +3,11 @@
 import { FaqAccordion } from "./FaqAccordion";
 import { useLanguage } from "@/lib/i18n/LanguageProvider";
 
-export function FaqContent() {
+interface FaqContentProps {
+  onActiveChange?: (index: number) => void;
+}
+
+export function FaqContent({ onActiveChange }: FaqContentProps) {
   const { t } = useLanguage();
 
   return (
@@ -30,7 +34,7 @@ export function FaqContent() {
       </div>
 
       {/* Accordion */}
-      <FaqAccordion />
+      <FaqAccordion onActiveChange={onActiveChange} />
     </div>
   );
 }

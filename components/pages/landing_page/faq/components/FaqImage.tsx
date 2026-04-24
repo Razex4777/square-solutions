@@ -1,23 +1,48 @@
+"use client";
+
 import Image from "next/image";
+import { motion, AnimatePresence } from "framer-motion";
 
-export function FaqImage() {
+const FAQ_IMAGES = [
+  "/images/faq-1.webp",
+  "/images/faq-2.webp",
+  "/images/faq-3.webp",
+  "/images/faq-4.webp",
+  "/images/faq-5.webp",
+];
+
+interface FaqImageProps {
+  activeIndex: number;
+}
+
+export function FaqImage({ activeIndex }: FaqImageProps) {
+  const currentImage = activeIndex >= 0 ? FAQ_IMAGES[activeIndex] : "/images/faq-default.webp";
+
   return (
-    <div className="relative w-full h-[600px] lg:h-full min-h-[500px] rounded-[2rem] overflow-hidden bg-[#0A0D14] flex items-center justify-center shadow-2xl">
-      
-      {/* Base Image */}
-      <Image
-        src="/images/faq-bg.webp"
-        alt="FAQ Mountain Context"
-        fill
-        className="object-cover object-center"
-      />
+    <div className="relative w-full h-[600px] lg:h-full min-h-[500px] rounded-[2rem] overflow-hidden bg-[var(--color-surface-card)] flex items-center justify-center shadow-2xl">
 
-      {/* Elegant Frosted Glass Circle */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[180px] h-[180px] rounded-full bg-[#0a1524]/40 backdrop-blur-xl border border-white/5 z-20 flex items-center justify-center shadow-[0_10px_40px_rgba(0,0,0,0.5)]">
-        <span className="text-[#a8c1d9] text-5xl font-serif tracking-widest drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)] opacity-90">
-          FAQ
-        </span>
-      </div>
+      {/* Crossfade between images */}
+      <AnimatePresence mode="wait">
+        <motion.div
+          key={currentImage}
+          initial={{ opacity: 0, scale: 1.05 }}
+          animate={{ opacity: 1, scale: 1 }}
+          exit={{ opacity: 0, scale: 0.95 }}
+          transition={{ duration: 0.5, ease: "easeInOut" }}
+          className="absolute inset-0"
+        >
+          <Image
+            src={currentImage}
+            alt="FAQ Illustration"
+            fill
+            className="object-cover object-center"
+            sizes="(max-width: 1024px) 100vw, 50vw"
+          />
+        </motion.div>
+      </AnimatePresence>
+
+      {/* Subtle overlay gradient for depth */}
+      <div className="absolute inset-0 bg-gradient-to-t from-[var(--color-surface)]/60 via-transparent to-[var(--color-surface)]/20 z-10 pointer-events-none" />
     </div>
   );
 }

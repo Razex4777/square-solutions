@@ -1,5 +1,8 @@
 @import "tailwindcss";
 
+/* ─────────────── Dark Mode (class-based via next-themes) ─────────────── */
+@custom-variant dark (&:is(.dark *));
+
 /* ─────────────── Custom Utilities ─────────────── */
 @layer utilities {
   .text-balance {
@@ -95,4 +98,18 @@ nav {
 
 ::-webkit-scrollbar-thumb:hover {
   background: var(--color-accent);
+}
+
+/* ─────────────── Shimmer Animation ─────────────── */
+@keyframes shimmer {
+  0% { transform: translateX(-100%); }
+  50% { transform: translateX(100%); }
+  100% { transform: translateX(100%); }
+}
+
+/* ─────────────── Hero Dot Grid Background ─────────────── */
+.hero-dot-grid {
+  background-image: radial-gradient(circle, var(--color-text-muted) 0.5px, transparent 0.5px);
+  background-size: 40px 40px;
+  opacity: 0.15;
 }

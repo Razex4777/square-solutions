@@ -13,6 +13,7 @@ export function ContactForm() {
     { value: "managed-it", label: t.contact.serviceOptions.managedIt },
     { value: "infra", label: t.contact.serviceOptions.infra },
     { value: "marketing", label: t.contact.serviceOptions.marketing },
+    { value: "social", label: t.contact.serviceOptions.social },
   ];
 
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
@@ -89,16 +90,15 @@ export function ContactForm() {
   const selectedLabel = serviceOptions.find(o => o.value === selectedService)?.label;
 
   return (
-    <form className="relative w-full rounded-2xl flex flex-col bg-gradient-to-br from-[#0c1a2e] to-[#08121e] border border-[#1e3a5f]/60 shadow-[0_0_40px_rgba(0,0,0,0.3)]">
+    <form className="relative w-full rounded-2xl flex flex-col bg-[var(--color-surface-elevated)] border border-[var(--color-border)] shadow-lg">
       {/* Glow effects layer — contained with overflow clip */}
       <div className="absolute inset-0 rounded-2xl overflow-hidden pointer-events-none">
-        <div className="absolute top-0 right-0 w-[700px] h-[700px] bg-[#2dc5f4] opacity-[0.12] blur-[100px] translate-x-1/4 -translate-y-1/4 rounded-full" />
-        <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-[#12e399] opacity-[0.06] blur-[80px] -translate-x-1/4 translate-y-1/4 rounded-full" />
-        {/* Extra center glow for depth */}
-        <div className="absolute top-1/2 left-1/2 w-[600px] h-[400px] bg-[#2dc5f4] opacity-[0.05] blur-[120px] -translate-x-1/2 -translate-y-1/2 rounded-full" />
+        <div className="absolute top-0 right-0 w-[700px] h-[700px] bg-[var(--color-accent)] opacity-[0.06] blur-[100px] translate-x-1/4 -translate-y-1/4 rounded-full" />
+        <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-[var(--color-accent-green)] opacity-[0.04] blur-[80px] -translate-x-1/4 translate-y-1/4 rounded-full" />
+        <div className="absolute top-1/2 left-1/2 w-[600px] h-[400px] bg-[var(--color-accent)] opacity-[0.03] blur-[120px] -translate-x-1/2 -translate-y-1/2 rounded-full" />
       </div>
 
-      {/* Content layer — no overflow restriction */}
+      {/* Content layer */}
       <div className="relative z-10 p-8 lg:p-12 flex flex-col">
 
         {/* Grid Inputs */}
@@ -106,37 +106,37 @@ export function ContactForm() {
           
           {/* Full Name */}
           <div className="flex flex-col gap-2">
-            <label className="text-white font-medium px-1">{t.contact.fullName}</label>
+            <label className="text-[var(--color-text-primary)] font-medium px-1">{t.contact.fullName}</label>
             <input 
               type="text" 
               placeholder={t.contact.fullNamePlaceholder}
-              className="w-full bg-[#0a1524]/40 border border-[#1e3a5f] rounded-lg px-4 py-3.5 text-slate-200 placeholder-[#4e627d] focus:outline-none focus:border-[#2dc5f4] transition-all focus:bg-[#0a1524]/60 focus:shadow-[0_0_15px_rgba(45,197,244,0.1)]"
+              className="w-full bg-[var(--color-input-bg)] border border-[var(--color-input-border)] rounded-lg px-4 py-3.5 text-[var(--color-text-primary)] placeholder-[var(--color-text-muted)] focus:outline-none focus:border-[var(--color-accent)] transition-all focus:shadow-[0_0_15px_var(--color-glow)]"
             />
           </div>
 
           {/* Phone Number */}
           <div className="flex flex-col gap-2">
-            <label className="text-white font-medium px-1">{t.contact.phone}</label>
+            <label className="text-[var(--color-text-primary)] font-medium px-1">{t.contact.phone}</label>
             <input 
               type="text" 
               placeholder={t.contact.phonePlaceholder}
-              className="w-full bg-[#0a1524]/40 border border-[#1e3a5f] rounded-lg px-4 py-3.5 text-slate-200 placeholder-[#4e627d] focus:outline-none focus:border-[#2dc5f4] transition-all focus:bg-[#0a1524]/60 focus:shadow-[0_0_15px_rgba(45,197,244,0.1)]"
+              className="w-full bg-[var(--color-input-bg)] border border-[var(--color-input-border)] rounded-lg px-4 py-3.5 text-[var(--color-text-primary)] placeholder-[var(--color-text-muted)] focus:outline-none focus:border-[var(--color-accent)] transition-all focus:shadow-[0_0_15px_var(--color-glow)]"
             />
           </div>
 
           {/* Email */}
           <div className="flex flex-col gap-2">
-            <label className="text-white font-medium px-1">{t.contact.email}</label>
+            <label className="text-[var(--color-text-primary)] font-medium px-1">{t.contact.email}</label>
             <input 
               type="email" 
               placeholder={t.contact.emailPlaceholder}
-              className="w-full bg-[#0a1524]/40 border border-[#1e3a5f] rounded-lg px-4 py-3.5 text-slate-200 placeholder-[#4e627d] focus:outline-none focus:border-[#2dc5f4] transition-all focus:bg-[#0a1524]/60 focus:shadow-[0_0_15px_rgba(45,197,244,0.1)]"
+              className="w-full bg-[var(--color-input-bg)] border border-[var(--color-input-border)] rounded-lg px-4 py-3.5 text-[var(--color-text-primary)] placeholder-[var(--color-text-muted)] focus:outline-none focus:border-[var(--color-accent)] transition-all focus:shadow-[0_0_15px_var(--color-glow)]"
             />
           </div>
 
           {/* Service Needed — Custom Dropdown */}
           <div className="flex flex-col gap-2">
-            <label className="text-white font-medium px-1">{t.contact.serviceNeeded}</label>
+            <label className="text-[var(--color-text-primary)] font-medium px-1">{t.contact.serviceNeeded}</label>
             <div className="relative" ref={dropdownRef}>
               {/* Trigger Button */}
               <button
@@ -156,13 +156,13 @@ export function ContactForm() {
                 onKeyDown={handleKeyDown}
                 className={`
                   w-full flex items-center justify-between 
-                  bg-[#0a1524]/40 border rounded-lg px-4 py-3.5 
+                  bg-[var(--color-input-bg)] border rounded-lg px-4 py-3.5 
                   text-left transition-all duration-200 focus:outline-none
                   ${isDropdownOpen 
-                    ? 'border-[#2dc5f4] bg-[#0a1524]/60 shadow-[0_0_15px_rgba(45,197,244,0.15)]' 
-                    : 'border-[#1e3a5f] hover:border-[#2a4a6a]'
+                    ? 'border-[var(--color-accent)] shadow-[0_0_15px_var(--color-glow)]' 
+                    : 'border-[var(--color-input-border)] hover:border-[var(--color-border-hover)]'
                   } 
-                  ${selectedService ? 'text-slate-200' : 'text-[#4e627d]'}
+                  ${selectedService ? 'text-[var(--color-text-primary)]' : 'text-[var(--color-text-muted)]'}
                 `}
               >
                 <span className="block truncate text-[15px]">
@@ -171,7 +171,7 @@ export function ContactForm() {
                 <ChevronDown 
                   className={`
                     w-5 h-5 shrink-0 transition-all duration-300
-                    ${isDropdownOpen ? 'rotate-180 text-[#2dc5f4]' : 'text-[#4e627d]'}
+                    ${isDropdownOpen ? 'rotate-180 text-[var(--color-accent)]' : 'text-[var(--color-text-muted)]'}
                   `}
                 />
               </button>
@@ -180,9 +180,9 @@ export function ContactForm() {
               <div 
                 className={`
                   absolute bottom-[calc(100%+6px)] left-0 z-[100] w-full
-                  bg-[#0c182c]/95 backdrop-blur-xl
-                  border border-[#1e3a5f] rounded-xl
-                  shadow-[0_-8px_40px_rgba(0,0,0,0.5),0_0_20px_rgba(45,197,244,0.06)]
+                  bg-[var(--color-surface-elevated)] backdrop-blur-xl
+                  border border-[var(--color-border)] rounded-xl
+                  shadow-lg
                   transition-all duration-200 origin-bottom
                   ${isDropdownOpen 
                     ? 'opacity-100 scale-100 translate-y-0 pointer-events-auto' 
@@ -213,18 +213,18 @@ export function ContactForm() {
                           cursor-pointer transition-all duration-150
                           flex items-center justify-between
                           ${isHighlighted 
-                            ? 'bg-[#162947]' 
+                            ? 'bg-[var(--color-surface-card)]' 
                             : 'bg-transparent'
                           }
                           ${isSelected 
-                            ? 'text-[#2dc5f4] font-medium' 
-                            : 'text-slate-300 hover:text-white'
+                            ? 'text-[var(--color-accent)] font-medium' 
+                            : 'text-[var(--color-text-secondary)] hover:text-[var(--color-text-primary)]'
                           }
                         `}
                       >
                         <span>{option.label}</span>
                         {isSelected && (
-                          <Check className="w-4 h-4 text-[#2dc5f4] shrink-0 rtl:mr-auto ltr:ml-auto" />
+                          <Check className="w-4 h-4 text-[var(--color-accent)] shrink-0 rtl:mr-auto ltr:ml-auto" />
                         )}
                       </li>
                     );
@@ -238,14 +238,14 @@ export function ContactForm() {
 
         {/* Message Textarea */}
         <div className="flex flex-col gap-2 w-full mb-8">
-          <label className="text-white font-medium px-1">{t.contact.message}</label>
+          <label className="text-[var(--color-text-primary)] font-medium px-1">{t.contact.message}</label>
           <div>
             <textarea 
               placeholder={t.contact.messagePlaceholder}
               rows={5}
-              className="w-full bg-[#0a1524] border border-[#1e3a5f] rounded-lg px-4 py-3.5 text-slate-200 placeholder-[#4e627d] focus:outline-none focus:border-[#2dc5f4] transition-colors resize-none"
+              className="w-full bg-[var(--color-input-bg)] border border-[var(--color-input-border)] rounded-lg px-4 py-3.5 text-[var(--color-text-primary)] placeholder-[var(--color-text-muted)] focus:outline-none focus:border-[var(--color-accent)] transition-colors resize-none"
             />
-            <div className="text-right rtl:text-left mt-1 w-full text-[#9ba8b8] text-[13px]">
+            <div className="text-right rtl:text-left mt-1 w-full text-[var(--color-text-muted)] text-[13px]">
               {t.contact.maxChars}
             </div>
           </div>

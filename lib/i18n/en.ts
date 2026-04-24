@@ -14,7 +14,7 @@ export const en = {
     badge: "Your Digital Transformation Partner Since 2025",
     headingLine1: "Engineering The Digital",
     headingLine2: "Future Of Your Business",
-    description: "From Custom Software Solutions To Managed IT Infrastructure And Digital Marketing We Deliver A Complete Technology Ecosystem That Accelerates Growth And Gives You A Real Competitive Edge.",
+    description: "From Custom Software Solutions To Managed IT Infrastructure And Digital Marketing. We Deliver A Complete Technology Ecosystem That Accelerates Growth And Gives You A Real Competitive Edge.",
     ctaPrimary: "Start Your Digital Journey",
     ctaSecondary: "Explore Our Solutions",
   },
@@ -31,6 +31,10 @@ export const en = {
     visionDesc: "To Be A Catalyst For Innovation By Delivering Tailored Digital Solutions That Empower Emerging Businesses To Succeed In Today's Competitive Landscape. We Are Dedicated To Making High-Quality, Custom-Built Applications Accessible To All—Regardless Of Budget—By Turning Unique Ideas Into Powerful, Results-Driven Digital Experiences.",
     valuesTitle: "Our Values",
     valuesDesc: "Our Commitment To Quality, Ethics, And Collaboration Defines Us. We Build Digital Solutions With Purpose And People In Mind.",
+    statsYears: "Years Of Experience",
+    statsProjects: "Projects Delivered",
+    statsClients: "Happy Clients",
+    statsCommitment: "Commitment",
   },
 
   // Services
@@ -79,6 +83,7 @@ export const en = {
       managedIt: "IT Managed Services",
       infra: "Digital Infrastructure",
       marketing: "Digital Marketing",
+      social: "Social Media Management",
     },
   },
 

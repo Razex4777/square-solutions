@@ -51,13 +51,23 @@ export function Footer() {
           <div className="flex flex-col">
              <h4 className="text-[var(--color-text-primary)] text-lg font-semibold mb-8">{t.footer.company}</h4>
              <ul className="flex flex-col gap-5">
-               {t.footer.companyLinks.map((link) => (
-                 <li key={link}>
-                   <a href="#" className="text-[var(--color-text-secondary)] text-[15px] hover:text-[var(--color-accent)] transition-colors">
-                     {link}
-                   </a>
-                 </li>
-               ))}
+               {t.footer.companyLinks.map((link, idx) => {
+                 const anchors = ['home', 'about-us', 'contact-us', 'faq'];
+                 return (
+                  <li key={link}>
+                    <a
+                      href={`#${anchors[idx]}`}
+                      onClick={(e) => {
+                        e.preventDefault();
+                        document.getElementById(anchors[idx])?.scrollIntoView({ behavior: 'smooth' });
+                      }}
+                      className="text-[var(--color-text-secondary)] text-[15px] hover:text-[var(--color-accent)] transition-colors"
+                    >
+                      {link}
+                    </a>
+                  </li>
+                 );
+               })}
              </ul>
           </div>
 

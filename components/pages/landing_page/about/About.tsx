@@ -5,6 +5,7 @@ import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
 import { AboutHeader } from './components/AboutHeader';
 import { AboutCards } from './components/AboutCards';
+import { AboutStats } from './components/AboutStats';
 
 export function About() {
   const container = useRef<HTMLElement>(null);
@@ -78,6 +79,7 @@ export function About() {
         <div className="about-cards-grid w-full">
           <AboutCards />
         </div>
+        <AboutStats />
       </div>
 
       {/* Bottom Divider */}

@@ -1,0 +1,1701 @@
+{
+  "version": "1.0.0",
+  "project": {
+    "name": "square-solutions",
+    "languages": [
+      "json",
+      "css",
+      "typescript",
+      "markdown",
+      "javascript"
+    ],
+    "frameworks": [
+      "React",
+      "Next.js"
+    ],
+    "description": "square-solutions — json, css, typescript, markdown, javascript project with 49 files",
+    "analyzedAt": "2026-04-24T09:50:46.082Z",
+    "gitCommitHash": "a045549e1c2330f696e4d0128c1168cbf9b7b582"
+  },
+  "nodes": [
+    {
+      "id": "file:.eslintrc.json",
+      "type": "file",
+      "name": ".eslintrc.json",
+      "filePath": ".eslintrc.json",
+      "summary": ".eslintrc.json — json source file",
+      "tags": [
+        "json",
+        "json"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:app/globals.css",
+      "type": "file",
+      "name": "globals.css",
+      "filePath": "app/globals.css",
+      "summary": "globals.css — css source file",
+      "tags": [
+        "css",
+        "css"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:app/layout.tsx",
+      "type": "file",
+      "name": "layout.tsx",
+      "filePath": "app/layout.tsx",
+      "summary": "layout.tsx — typescript source file",
+      "tags": [
+        "typescript",
+        "tsx"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:app/page.tsx",
+      "type": "file",
+      "name": "page.tsx",
+      "filePath": "app/page.tsx",
+      "summary": "page.tsx — typescript source file",
+      "tags": [
+        "typescript",
+        "tsx"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:components/pages/landing_page/about/About.tsx",
+      "type": "file",
+      "name": "About.tsx",
+      "filePath": "components/pages/landing_page/about/About.tsx",
+      "summary": "About.tsx — typescript source file",
+      "tags": [
+        "typescript",
+        "tsx"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "fn:components/pages/landing_page/about/About.tsx#About",
+      "type": "function",
+      "name": "About",
+      "filePath": "components/pages/landing_page/about/About.tsx",
+      "lineRange": [
+        10,
+        89
+      ],
+      "summary": "About()",
+      "tags": [
+        "function",
+        "typescript"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:components/pages/landing_page/about/components/AboutCards.tsx",
+      "type": "file",
+      "name": "AboutCards.tsx",
+      "filePath": "components/pages/landing_page/about/components/AboutCards.tsx",
+      "summary": "AboutCards.tsx — typescript source file",
+      "tags": [
+        "typescript",
+        "tsx"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "fn:components/pages/landing_page/about/components/AboutCards.tsx#AboutCards",
+      "type": "function",
+      "name": "AboutCards",
+      "filePath": "components/pages/landing_page/about/components/AboutCards.tsx",
+      "lineRange": [
+        7,
+        58
+      ],
+      "summary": "AboutCards()",
+      "tags": [
+        "function",
+        "typescript"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:components/pages/landing_page/about/components/AboutHeader.tsx",
+      "type": "file",
+      "name": "AboutHeader.tsx",
+      "filePath": "components/pages/landing_page/about/components/AboutHeader.tsx",
+      "summary": "AboutHeader.tsx — typescript source file",
+      "tags": [
+        "typescript",
+        "tsx"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "fn:components/pages/landing_page/about/components/AboutHeader.tsx#AboutHeader",
+      "type": "function",
+      "name": "AboutHeader",
+      "filePath": "components/pages/landing_page/about/components/AboutHeader.tsx",
+      "lineRange": [
+        5,
+        26
+      ],
+      "summary": "AboutHeader()",
+      "tags": [
+        "function",
+        "typescript"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:components/pages/landing_page/about/components/AboutStats.tsx",
+      "type": "file",
+      "name": "AboutStats.tsx",
+      "filePath": "components/pages/landing_page/about/components/AboutStats.tsx",
+      "summary": "AboutStats.tsx — typescript source file",
+      "tags": [
+        "typescript",
+        "tsx"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "fn:components/pages/landing_page/about/components/AboutStats.tsx#AboutStats",
+      "type": "function",
+      "name": "AboutStats",
+      "filePath": "components/pages/landing_page/about/components/AboutStats.tsx",
+      "lineRange": [
+        8,
+        99
+      ],
+      "summary": "AboutStats()",
+      "tags": [
+        "function",
+        "typescript"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:components/pages/landing_page/contact/components/ContactForm.tsx",
+      "type": "file",
+      "name": "ContactForm.tsx",
+      "filePath": "components/pages/landing_page/contact/components/ContactForm.tsx",
+      "summary": "ContactForm.tsx — typescript source file",
+      "tags": [
+        "typescript",
+        "tsx"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "fn:components/pages/landing_page/contact/components/ContactForm.tsx#ContactForm",
+      "type": "function",
+      "name": "ContactForm",
+      "filePath": "components/pages/landing_page/contact/components/ContactForm.tsx",
+      "lineRange": [
+        7,
+        266
+      ],
+      "summary": "ContactForm()",
+      "tags": [
+        "function",
+        "typescript"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:components/pages/landing_page/contact/components/ContactHeader.tsx",
+      "type": "file",
+      "name": "ContactHeader.tsx",
+      "filePath": "components/pages/landing_page/contact/components/ContactHeader.tsx",
+      "summary": "ContactHeader.tsx — typescript source file",
+      "tags": [
+        "typescript",
+        "tsx"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "fn:components/pages/landing_page/contact/components/ContactHeader.tsx#ContactHeader",
+      "type": "function",
+      "name": "ContactHeader",
+      "filePath": "components/pages/landing_page/contact/components/ContactHeader.tsx",
+      "lineRange": [
+        5,
+        26
+      ],
+      "summary": "ContactHeader()",
+      "tags": [
+        "function",
+        "typescript"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:components/pages/landing_page/contact/components/ContactInfo.tsx",
+      "type": "file",
+      "name": "ContactInfo.tsx",
+      "filePath": "components/pages/landing_page/contact/components/ContactInfo.tsx",
+      "summary": "ContactInfo.tsx — typescript source file",
+      "tags": [
+        "typescript",
+        "tsx"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "fn:components/pages/landing_page/contact/components/ContactInfo.tsx#ContactInfo",
+      "type": "function",
+      "name": "ContactInfo",
+      "filePath": "components/pages/landing_page/contact/components/ContactInfo.tsx",
+      "lineRange": [
+        7,
+        67
+      ],
+      "summary": "ContactInfo()",
+      "tags": [
+        "function",
+        "typescript"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:components/pages/landing_page/contact/Contact.tsx",
+      "type": "file",
+      "name": "Contact.tsx",
+      "filePath": "components/pages/landing_page/contact/Contact.tsx",
+      "summary": "Contact.tsx — typescript source file",
+      "tags": [
+        "typescript",
+        "tsx"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "fn:components/pages/landing_page/contact/Contact.tsx#Contact",
+      "type": "function",
+      "name": "Contact",
+      "filePath": "components/pages/landing_page/contact/Contact.tsx",
+      "lineRange": [
+        10,
+        74
+      ],
+      "summary": "Contact()",
+      "tags": [
+        "function",
+        "typescript"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:components/pages/landing_page/cta/Cta.tsx",
+      "type": "file",
+      "name": "Cta.tsx",
+      "filePath": "components/pages/landing_page/cta/Cta.tsx",
+      "summary": "Cta.tsx — typescript source file",
+      "tags": [
+        "typescript",
+        "tsx"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "fn:components/pages/landing_page/cta/Cta.tsx#Cta",
+      "type": "function",
+      "name": "Cta",
+      "filePath": "components/pages/landing_page/cta/Cta.tsx",
+      "lineRange": [
+        9,
+        103
+      ],
+      "summary": "Cta()",
+      "tags": [
+        "function",
+        "typescript"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:components/pages/landing_page/faq/components/FaqAccordion.tsx",
+      "type": "file",
+      "name": "FaqAccordion.tsx",
+      "filePath": "components/pages/landing_page/faq/components/FaqAccordion.tsx",
+      "summary": "FaqAccordion.tsx — typescript source file",
+      "tags": [
+        "typescript",
+        "tsx"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "fn:components/pages/landing_page/faq/components/FaqAccordion.tsx#FaqItem",
+      "type": "function",
+      "name": "FaqItem",
+      "filePath": "components/pages/landing_page/faq/components/FaqAccordion.tsx",
+      "lineRange": [
+        15,
+        15
+      ],
+      "summary": "FaqItem({, answer, isOpen, onClick)",
+      "tags": [
+        "function",
+        "typescript"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:components/pages/landing_page/faq/components/FaqContent.tsx",
+      "type": "file",
+      "name": "FaqContent.tsx",
+      "filePath": "components/pages/landing_page/faq/components/FaqContent.tsx",
+      "summary": "FaqContent.tsx — typescript source file",
+      "tags": [
+        "typescript",
+        "tsx"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "fn:components/pages/landing_page/faq/components/FaqContent.tsx#FaqContent",
+      "type": "function",
+      "name": "FaqContent",
+      "filePath": "components/pages/landing_page/faq/components/FaqContent.tsx",
+      "lineRange": [
+        10,
+        10
+      ],
+      "summary": "FaqContent({)",
+      "tags": [
+        "function",
+        "typescript"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:components/pages/landing_page/faq/components/FaqImage.tsx",
+      "type": "file",
+      "name": "FaqImage.tsx",
+      "filePath": "components/pages/landing_page/faq/components/FaqImage.tsx",
+      "summary": "FaqImage.tsx — typescript source file",
+      "tags": [
+        "typescript",
+        "tsx"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "fn:components/pages/landing_page/faq/components/FaqImage.tsx#FaqImage",
+      "type": "function",
+      "name": "FaqImage",
+      "filePath": "components/pages/landing_page/faq/components/FaqImage.tsx",
+      "lineRange": [
+        18,
+        18
+      ],
+      "summary": "FaqImage({)",
+      "tags": [
+        "function",
+        "typescript"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:components/pages/landing_page/faq/Faq.tsx",
+      "type": "file",
+      "name": "Faq.tsx",
+      "filePath": "components/pages/landing_page/faq/Faq.tsx",
+      "summary": "Faq.tsx — typescript source file",
+      "tags": [
+        "typescript",
+        "tsx"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "fn:components/pages/landing_page/faq/Faq.tsx#Faq",
+      "type": "function",
+      "name": "Faq",
+      "filePath": "components/pages/landing_page/faq/Faq.tsx",
+      "lineRange": [
+        9,
+        71
+      ],
+      "summary": "Faq()",
+      "tags": [
+        "function",
+        "typescript"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:components/pages/landing_page/footer/Footer.tsx",
+      "type": "file",
+      "name": "Footer.tsx",
+      "filePath": "components/pages/landing_page/footer/Footer.tsx",
+      "summary": "Footer.tsx — typescript source file",
+      "tags": [
+        "typescript",
+        "tsx"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "fn:components/pages/landing_page/footer/Footer.tsx#Footer",
+      "type": "function",
+      "name": "Footer",
+      "filePath": "components/pages/landing_page/footer/Footer.tsx",
+      "lineRange": [
+        8,
+        110
+      ],
+      "summary": "Footer()",
+      "tags": [
+        "function",
+        "typescript"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:components/pages/landing_page/hero/components/HeroContent.tsx",
+      "type": "file",
+      "name": "HeroContent.tsx",
+      "filePath": "components/pages/landing_page/hero/components/HeroContent.tsx",
+      "summary": "HeroContent.tsx — typescript source file",
+      "tags": [
+        "typescript",
+        "tsx"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "fn:components/pages/landing_page/hero/components/HeroContent.tsx#AnimatedHeadingLine",
+      "type": "function",
+      "name": "AnimatedHeadingLine",
+      "filePath": "components/pages/landing_page/hero/components/HeroContent.tsx",
+      "lineRange": [
+        8,
+        13
+      ],
+      "summary": "AnimatedHeadingLine({, className, delayOffset, gradient, })",
+      "tags": [
+        "function",
+        "typescript"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "fn:components/pages/landing_page/hero/components/HeroContent.tsx#HeroContent",
+      "type": "function",
+      "name": "HeroContent",
+      "filePath": "components/pages/landing_page/hero/components/HeroContent.tsx",
+      "lineRange": [
+        44,
+        128
+      ],
+      "summary": "HeroContent()",
+      "tags": [
+        "function",
+        "typescript"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:components/pages/landing_page/hero/components/HeroGraphic.tsx",
+      "type": "file",
+      "name": "HeroGraphic.tsx",
+      "filePath": "components/pages/landing_page/hero/components/HeroGraphic.tsx",
+      "summary": "HeroGraphic.tsx — typescript source file",
+      "tags": [
+        "typescript",
+        "tsx"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "fn:components/pages/landing_page/hero/components/HeroGraphic.tsx#OrbitTag",
+      "type": "function",
+      "name": "OrbitTag",
+      "filePath": "components/pages/landing_page/hero/components/HeroGraphic.tsx",
+      "lineRange": [
+        11,
+        11
+      ],
+      "summary": "OrbitTag({, dotColor)",
+      "tags": [
+        "function",
+        "typescript"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "fn:components/pages/landing_page/hero/components/HeroGraphic.tsx#HeroGraphic",
+      "type": "function",
+      "name": "HeroGraphic",
+      "filePath": "components/pages/landing_page/hero/components/HeroGraphic.tsx",
+      "lineRange": [
+        29,
+        120
+      ],
+      "summary": "HeroGraphic()",
+      "tags": [
+        "function",
+        "typescript"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:components/pages/landing_page/hero/Hero.tsx",
+      "type": "file",
+      "name": "Hero.tsx",
+      "filePath": "components/pages/landing_page/hero/Hero.tsx",
+      "summary": "Hero.tsx — typescript source file",
+      "tags": [
+        "typescript",
+        "tsx"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "fn:components/pages/landing_page/hero/Hero.tsx#Hero",
+      "type": "function",
+      "name": "Hero",
+      "filePath": "components/pages/landing_page/hero/Hero.tsx",
+      "lineRange": [
+        9,
+        57
+      ],
+      "summary": "Hero()",
+      "tags": [
+        "function",
+        "typescript"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:components/pages/landing_page/navbar/components/NavActions.tsx",
+      "type": "file",
+      "name": "NavActions.tsx",
+      "filePath": "components/pages/landing_page/navbar/components/NavActions.tsx",
+      "summary": "NavActions.tsx — typescript source file",
+      "tags": [
+        "typescript",
+        "tsx"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "fn:components/pages/landing_page/navbar/components/NavActions.tsx#NavActions",
+      "type": "function",
+      "name": "NavActions",
+      "filePath": "components/pages/landing_page/navbar/components/NavActions.tsx",
+      "lineRange": [
+        9,
+        85
+      ],
+      "summary": "NavActions()",
+      "tags": [
+        "function",
+        "typescript"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:components/pages/landing_page/navbar/components/NavLinks.tsx",
+      "type": "file",
+      "name": "NavLinks.tsx",
+      "filePath": "components/pages/landing_page/navbar/components/NavLinks.tsx",
+      "summary": "NavLinks.tsx — typescript source file",
+      "tags": [
+        "typescript",
+        "tsx"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "fn:components/pages/landing_page/navbar/components/NavLinks.tsx#NavLinks",
+      "type": "function",
+      "name": "NavLinks",
+      "filePath": "components/pages/landing_page/navbar/components/NavLinks.tsx",
+      "lineRange": [
+        7,
+        42
+      ],
+      "summary": "NavLinks()",
+      "tags": [
+        "function",
+        "typescript"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:components/pages/landing_page/navbar/components/NavLogo.tsx",
+      "type": "file",
+      "name": "NavLogo.tsx",
+      "filePath": "components/pages/landing_page/navbar/components/NavLogo.tsx",
+      "summary": "NavLogo.tsx — typescript source file",
+      "tags": [
+        "typescript",
+        "tsx"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "fn:components/pages/landing_page/navbar/components/NavLogo.tsx#NavLogo",
+      "type": "function",
+      "name": "NavLogo",
+      "filePath": "components/pages/landing_page/navbar/components/NavLogo.tsx",
+      "lineRange": [
+        3,
+        16
+      ],
+      "summary": "NavLogo()",
+      "tags": [
+        "function",
+        "typescript"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:components/pages/landing_page/navbar/Navbar.tsx",
+      "type": "file",
+      "name": "Navbar.tsx",
+      "filePath": "components/pages/landing_page/navbar/Navbar.tsx",
+      "summary": "Navbar.tsx — typescript source file",
+      "tags": [
+        "typescript",
+        "tsx"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "fn:components/pages/landing_page/navbar/Navbar.tsx#Navbar",
+      "type": "function",
+      "name": "Navbar",
+      "filePath": "components/pages/landing_page/navbar/Navbar.tsx",
+      "lineRange": [
+        11,
+        88
+      ],
+      "summary": "Navbar()",
+      "tags": [
+        "function",
+        "typescript"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:components/pages/landing_page/partners/PartnersMarquee.tsx",
+      "type": "file",
+      "name": "PartnersMarquee.tsx",
+      "filePath": "components/pages/landing_page/partners/PartnersMarquee.tsx",
+      "summary": "PartnersMarquee.tsx — typescript source file",
+      "tags": [
+        "typescript",
+        "tsx"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "fn:components/pages/landing_page/partners/PartnersMarquee.tsx#PartnersMarquee",
+      "type": "function",
+      "name": "PartnersMarquee",
+      "filePath": "components/pages/landing_page/partners/PartnersMarquee.tsx",
+      "lineRange": [
+        23,
+        77
+      ],
+      "summary": "PartnersMarquee()",
+      "tags": [
+        "function",
+        "typescript"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:components/pages/landing_page/services/components/ServicesCards.tsx",
+      "type": "file",
+      "name": "ServicesCards.tsx",
+      "filePath": "components/pages/landing_page/services/components/ServicesCards.tsx",
+      "summary": "ServicesCards.tsx — typescript source file",
+      "tags": [
+        "typescript",
+        "tsx"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "fn:components/pages/landing_page/services/components/ServicesCards.tsx#ServicesCards",
+      "type": "function",
+      "name": "ServicesCards",
+      "filePath": "components/pages/landing_page/services/components/ServicesCards.tsx",
+      "lineRange": [
+        7,
+        90
+      ],
+      "summary": "ServicesCards()",
+      "tags": [
+        "function",
+        "typescript"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:components/pages/landing_page/services/components/ServicesHeader.tsx",
+      "type": "file",
+      "name": "ServicesHeader.tsx",
+      "filePath": "components/pages/landing_page/services/components/ServicesHeader.tsx",
+      "summary": "ServicesHeader.tsx — typescript source file",
+      "tags": [
+        "typescript",
+        "tsx"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "fn:components/pages/landing_page/services/components/ServicesHeader.tsx#ServicesHeader",
+      "type": "function",
+      "name": "ServicesHeader",
+      "filePath": "components/pages/landing_page/services/components/ServicesHeader.tsx",
+      "lineRange": [
+        5,
+        22
+      ],
+      "summary": "ServicesHeader()",
+      "tags": [
+        "function",
+        "typescript"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:components/pages/landing_page/services/Services.tsx",
+      "type": "file",
+      "name": "Services.tsx",
+      "filePath": "components/pages/landing_page/services/Services.tsx",
+      "summary": "Services.tsx — typescript source file",
+      "tags": [
+        "typescript",
+        "tsx"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "fn:components/pages/landing_page/services/Services.tsx#Services",
+      "type": "function",
+      "name": "Services",
+      "filePath": "components/pages/landing_page/services/Services.tsx",
+      "lineRange": [
+        9,
+        72
+      ],
+      "summary": "Services()",
+      "tags": [
+        "function",
+        "typescript"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:components/SmoothScroll.tsx",
+      "type": "file",
+      "name": "SmoothScroll.tsx",
+      "filePath": "components/SmoothScroll.tsx",
+      "summary": "SmoothScroll.tsx — typescript source file",
+      "tags": [
+        "typescript",
+        "tsx"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "fn:components/SmoothScroll.tsx#SmoothScroll",
+      "type": "function",
+      "name": "SmoothScroll",
+      "filePath": "components/SmoothScroll.tsx",
+      "lineRange": [
+        14,
+        14
+      ],
+      "summary": "SmoothScroll({)",
+      "tags": [
+        "function",
+        "typescript"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:components/ThemeProvider.tsx",
+      "type": "file",
+      "name": "ThemeProvider.tsx",
+      "filePath": "components/ThemeProvider.tsx",
+      "summary": "ThemeProvider.tsx — typescript source file",
+      "tags": [
+        "typescript",
+        "tsx"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "fn:components/ThemeProvider.tsx#ThemeProvider",
+      "type": "function",
+      "name": "ThemeProvider",
+      "filePath": "components/ThemeProvider.tsx",
+      "lineRange": [
+        5,
+        5
+      ],
+      "summary": "ThemeProvider({)",
+      "tags": [
+        "function",
+        "typescript"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:components/ui/CountUp.tsx",
+      "type": "file",
+      "name": "CountUp.tsx",
+      "filePath": "components/ui/CountUp.tsx",
+      "summary": "CountUp.tsx — typescript source file",
+      "tags": [
+        "typescript",
+        "tsx"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:components/ui/TiltCard.tsx",
+      "type": "file",
+      "name": "TiltCard.tsx",
+      "filePath": "components/ui/TiltCard.tsx",
+      "summary": "TiltCard.tsx — typescript source file",
+      "tags": [
+        "typescript",
+        "tsx"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:docs/changelog.md",
+      "type": "file",
+      "name": "changelog.md",
+      "filePath": "docs/changelog.md",
+      "summary": "changelog.md — markdown source file",
+      "tags": [
+        "markdown",
+        "md"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:docs/plans/2026-04-22-animations-and-theming.md",
+      "type": "file",
+      "name": "2026-04-22-animations-and-theming.md",
+      "filePath": "docs/plans/2026-04-22-animations-and-theming.md",
+      "summary": "2026-04-22-animations-and-theming.md — markdown source file",
+      "tags": [
+        "markdown",
+        "md"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:eslint.config.mjs",
+      "type": "file",
+      "name": "eslint.config.mjs",
+      "filePath": "eslint.config.mjs",
+      "summary": "eslint.config.mjs — javascript source file",
+      "tags": [
+        "javascript",
+        "mjs"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:hooks/use-mobile.ts",
+      "type": "file",
+      "name": "use-mobile.ts",
+      "filePath": "hooks/use-mobile.ts",
+      "summary": "use-mobile.ts — typescript source file",
+      "tags": [
+        "typescript",
+        "ts"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "fn:hooks/use-mobile.ts#useIsMobile",
+      "type": "function",
+      "name": "useIsMobile",
+      "filePath": "hooks/use-mobile.ts",
+      "lineRange": [
+        5,
+        20
+      ],
+      "summary": "useIsMobile()",
+      "tags": [
+        "function",
+        "typescript"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:lib/i18n/ar.ts",
+      "type": "file",
+      "name": "ar.ts",
+      "filePath": "lib/i18n/ar.ts",
+      "summary": "ar.ts — typescript source file",
+      "tags": [
+        "typescript",
+        "ts"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:lib/i18n/en.ts",
+      "type": "file",
+      "name": "en.ts",
+      "filePath": "lib/i18n/en.ts",
+      "summary": "en.ts — typescript source file",
+      "tags": [
+        "typescript",
+        "ts"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:lib/i18n/LanguageProvider.tsx",
+      "type": "file",
+      "name": "LanguageProvider.tsx",
+      "filePath": "lib/i18n/LanguageProvider.tsx",
+      "summary": "LanguageProvider.tsx — typescript source file",
+      "tags": [
+        "typescript",
+        "tsx"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "fn:lib/i18n/LanguageProvider.tsx#LanguageProvider",
+      "type": "function",
+      "name": "LanguageProvider",
+      "filePath": "lib/i18n/LanguageProvider.tsx",
+      "lineRange": [
+        26,
+        26
+      ],
+      "summary": "LanguageProvider({)",
+      "tags": [
+        "function",
+        "typescript"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "fn:lib/i18n/LanguageProvider.tsx#useLanguage",
+      "type": "function",
+      "name": "useLanguage",
+      "filePath": "lib/i18n/LanguageProvider.tsx",
+      "lineRange": [
+        71,
+        77
+      ],
+      "summary": "useLanguage()",
+      "tags": [
+        "function",
+        "typescript"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:lib/utils.ts",
+      "type": "file",
+      "name": "utils.ts",
+      "filePath": "lib/utils.ts",
+      "summary": "utils.ts — typescript source file",
+      "tags": [
+        "typescript",
+        "ts"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "fn:lib/utils.ts#cn",
+      "type": "function",
+      "name": "cn",
+      "filePath": "lib/utils.ts",
+      "lineRange": [
+        4,
+        6
+      ],
+      "summary": "cn(inputs)",
+      "tags": [
+        "function",
+        "typescript"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:metadata.json",
+      "type": "file",
+      "name": "metadata.json",
+      "filePath": "metadata.json",
+      "summary": "metadata.json — json source file",
+      "tags": [
+        "json",
+        "json"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:next-env.d.ts",
+      "type": "file",
+      "name": "next-env.d.ts",
+      "filePath": "next-env.d.ts",
+      "summary": "next-env.d.ts — typescript source file",
+      "tags": [
+        "typescript",
+        "ts"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:next.config.ts",
+      "type": "file",
+      "name": "next.config.ts",
+      "filePath": "next.config.ts",
+      "summary": "next.config.ts — typescript source file",
+      "tags": [
+        "typescript",
+        "ts"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:package-lock.json",
+      "type": "file",
+      "name": "package-lock.json",
+      "filePath": "package-lock.json",
+      "summary": "package-lock.json — json source file",
+      "tags": [
+        "json",
+        "json"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:package.json",
+      "type": "file",
+      "name": "package.json",
+      "filePath": "package.json",
+      "summary": "package.json — json source file",
+      "tags": [
+        "json",
+        "json"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:postcss.config.mjs",
+      "type": "file",
+      "name": "postcss.config.mjs",
+      "filePath": "postcss.config.mjs",
+      "summary": "postcss.config.mjs — javascript source file",
+      "tags": [
+        "javascript",
+        "mjs"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:README.md",
+      "type": "file",
+      "name": "README.md",
+      "filePath": "README.md",
+      "summary": "README.md — markdown source file",
+      "tags": [
+        "markdown",
+        "md"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:tsconfig.json",
+      "type": "file",
+      "name": "tsconfig.json",
+      "filePath": "tsconfig.json",
+      "summary": "tsconfig.json — json source file",
+      "tags": [
+        "json",
+        "json"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:components/pages/landing_page/about/About.tsx",
+      "target": "fn:components/pages/landing_page/about/About.tsx#About",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "file:components/pages/landing_page/about/About.tsx",
+      "target": "file:components/pages/landing_page/about/components/AboutHeader.tsx",
+      "type": "imports",
+      "direction": "forward",
+      "description": "imports { AboutHeader }",
+      "weight": 0.7
+    },
+    {
+      "source": "file:components/pages/landing_page/about/About.tsx",
+      "target": "file:components/pages/landing_page/about/components/AboutCards.tsx",
+      "type": "imports",
+      "direction": "forward",
+      "description": "imports { AboutCards }",
+      "weight": 0.7
+    },
+    {
+      "source": "file:components/pages/landing_page/about/About.tsx",
+      "target": "file:components/pages/landing_page/about/components/AboutStats.tsx",
+      "type": "imports",
+      "direction": "forward",
+      "description": "imports { AboutStats }",
+      "weight": 0.7
+    },
+    {
+      "source": "file:components/pages/landing_page/about/components/AboutCards.tsx",
+      "target": "fn:components/pages/landing_page/about/components/AboutCards.tsx#AboutCards",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "file:components/pages/landing_page/about/components/AboutHeader.tsx",
+      "target": "fn:components/pages/landing_page/about/components/AboutHeader.tsx#AboutHeader",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "file:components/pages/landing_page/about/components/AboutStats.tsx",
+      "target": "fn:components/pages/landing_page/about/components/AboutStats.tsx#AboutStats",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "file:components/pages/landing_page/contact/components/ContactForm.tsx",
+      "target": "fn:components/pages/landing_page/contact/components/ContactForm.tsx#ContactForm",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "file:components/pages/landing_page/contact/components/ContactHeader.tsx",
+      "target": "fn:components/pages/landing_page/contact/components/ContactHeader.tsx#ContactHeader",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "file:components/pages/landing_page/contact/components/ContactInfo.tsx",
+      "target": "fn:components/pages/landing_page/contact/components/ContactInfo.tsx#ContactInfo",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "file:components/pages/landing_page/contact/Contact.tsx",
+      "target": "fn:components/pages/landing_page/contact/Contact.tsx#Contact",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "file:components/pages/landing_page/contact/Contact.tsx",
+      "target": "file:components/pages/landing_page/contact/components/ContactHeader.tsx",
+      "type": "imports",
+      "direction": "forward",
+      "description": "imports { ContactHeader }",
+      "weight": 0.7
+    },
+    {
+      "source": "file:components/pages/landing_page/contact/Contact.tsx",
+      "target": "file:components/pages/landing_page/contact/components/ContactInfo.tsx",
+      "type": "imports",
+      "direction": "forward",
+      "description": "imports { ContactInfo }",
+      "weight": 0.7
+    },
+    {
+      "source": "file:components/pages/landing_page/contact/Contact.tsx",
+      "target": "file:components/pages/landing_page/contact/components/ContactForm.tsx",
+      "type": "imports",
+      "direction": "forward",
+      "description": "imports { ContactForm }",
+      "weight": 0.7
+    },
+    {
+      "source": "file:components/pages/landing_page/cta/Cta.tsx",
+      "target": "fn:components/pages/landing_page/cta/Cta.tsx#Cta",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "file:components/pages/landing_page/faq/components/FaqAccordion.tsx",
+      "target": "fn:components/pages/landing_page/faq/components/FaqAccordion.tsx#FaqItem",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "file:components/pages/landing_page/faq/components/FaqContent.tsx",
+      "target": "fn:components/pages/landing_page/faq/components/FaqContent.tsx#FaqContent",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "file:components/pages/landing_page/faq/components/FaqContent.tsx",
+      "target": "file:components/pages/landing_page/faq/components/FaqAccordion.tsx",
+      "type": "imports",
+      "direction": "forward",
+      "description": "imports { FaqAccordion }",
+      "weight": 0.7
+    },
+    {
+      "source": "file:components/pages/landing_page/faq/components/FaqImage.tsx",
+      "target": "fn:components/pages/landing_page/faq/components/FaqImage.tsx#FaqImage",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "file:components/pages/landing_page/faq/Faq.tsx",
+      "target": "fn:components/pages/landing_page/faq/Faq.tsx#Faq",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "file:components/pages/landing_page/faq/Faq.tsx",
+      "target": "file:components/pages/landing_page/faq/components/FaqContent.tsx",
+      "type": "imports",
+      "direction": "forward",
+      "description": "imports { FaqContent }",
+      "weight": 0.7
+    },
+    {
+      "source": "file:components/pages/landing_page/faq/Faq.tsx",
+      "target": "file:components/pages/landing_page/faq/components/FaqImage.tsx",
+      "type": "imports",
+      "direction": "forward",
+      "description": "imports { FaqImage }",
+      "weight": 0.7
+    },
+    {
+      "source": "file:components/pages/landing_page/footer/Footer.tsx",
+      "target": "fn:components/pages/landing_page/footer/Footer.tsx#Footer",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "file:components/pages/landing_page/hero/components/HeroContent.tsx",
+      "target": "fn:components/pages/landing_page/hero/components/HeroContent.tsx#AnimatedHeadingLine",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "file:components/pages/landing_page/hero/components/HeroContent.tsx",
+      "target": "fn:components/pages/landing_page/hero/components/HeroContent.tsx#HeroContent",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "file:components/pages/landing_page/hero/components/HeroGraphic.tsx",
+      "target": "fn:components/pages/landing_page/hero/components/HeroGraphic.tsx#OrbitTag",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "file:components/pages/landing_page/hero/components/HeroGraphic.tsx",
+      "target": "fn:components/pages/landing_page/hero/components/HeroGraphic.tsx#HeroGraphic",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "file:components/pages/landing_page/hero/Hero.tsx",
+      "target": "fn:components/pages/landing_page/hero/Hero.tsx#Hero",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "file:components/pages/landing_page/hero/Hero.tsx",
+      "target": "file:components/pages/landing_page/hero/components/HeroContent.tsx",
+      "type": "imports",
+      "direction": "forward",
+      "description": "imports { HeroContent }",
+      "weight": 0.7
+    },
+    {
+      "source": "file:components/pages/landing_page/hero/Hero.tsx",
+      "target": "file:components/pages/landing_page/hero/components/HeroGraphic.tsx",
+      "type": "imports",
+      "direction": "forward",
+      "description": "imports { HeroGraphic }",
+      "weight": 0.7
+    },
+    {
+      "source": "file:components/pages/landing_page/navbar/components/NavActions.tsx",
+      "target": "fn:components/pages/landing_page/navbar/components/NavActions.tsx#NavActions",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "file:components/pages/landing_page/navbar/components/NavLinks.tsx",
+      "target": "fn:components/pages/landing_page/navbar/components/NavLinks.tsx#NavLinks",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "file:components/pages/landing_page/navbar/components/NavLogo.tsx",
+      "target": "fn:components/pages/landing_page/navbar/components/NavLogo.tsx#NavLogo",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "file:components/pages/landing_page/navbar/Navbar.tsx",
+      "target": "fn:components/pages/landing_page/navbar/Navbar.tsx#Navbar",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "file:components/pages/landing_page/navbar/Navbar.tsx",
+      "target": "file:components/pages/landing_page/navbar/components/NavLogo.tsx",
+      "type": "imports",
+      "direction": "forward",
+      "description": "imports { NavLogo }",
+      "weight": 0.7
+    },
+    {
+      "source": "file:components/pages/landing_page/navbar/Navbar.tsx",
+      "target": "file:components/pages/landing_page/navbar/components/NavLinks.tsx",
+      "type": "imports",
+      "direction": "forward",
+      "description": "imports { NavLinks }",
+      "weight": 0.7
+    },
+    {
+      "source": "file:components/pages/landing_page/navbar/Navbar.tsx",
+      "target": "file:components/pages/landing_page/navbar/components/NavActions.tsx",
+      "type": "imports",
+      "direction": "forward",
+      "description": "imports { NavActions }",
+      "weight": 0.7
+    },
+    {
+      "source": "file:components/pages/landing_page/partners/PartnersMarquee.tsx",
+      "target": "fn:components/pages/landing_page/partners/PartnersMarquee.tsx#PartnersMarquee",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "file:components/pages/landing_page/services/components/ServicesCards.tsx",
+      "target": "fn:components/pages/landing_page/services/components/ServicesCards.tsx#ServicesCards",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "file:components/pages/landing_page/services/components/ServicesHeader.tsx",
+      "target": "fn:components/pages/landing_page/services/components/ServicesHeader.tsx#ServicesHeader",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "file:components/pages/landing_page/services/Services.tsx",
+      "target": "fn:components/pages/landing_page/services/Services.tsx#Services",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "file:components/pages/landing_page/services/Services.tsx",
+      "target": "file:components/pages/landing_page/services/components/ServicesHeader.tsx",
+      "type": "imports",
+      "direction": "forward",
+      "description": "imports { ServicesHeader }",
+      "weight": 0.7
+    },
+    {
+      "source": "file:components/pages/landing_page/services/Services.tsx",
+      "target": "file:components/pages/landing_page/services/components/ServicesCards.tsx",
+      "type": "imports",
+      "direction": "forward",
+      "description": "imports { ServicesCards }",
+      "weight": 0.7
+    },
+    {
+      "source": "file:components/SmoothScroll.tsx",
+      "target": "fn:components/SmoothScroll.tsx#SmoothScroll",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "file:components/ThemeProvider.tsx",
+      "target": "fn:components/ThemeProvider.tsx#ThemeProvider",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "file:hooks/use-mobile.ts",
+      "target": "fn:hooks/use-mobile.ts#useIsMobile",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "file:lib/i18n/LanguageProvider.tsx",
+      "target": "fn:lib/i18n/LanguageProvider.tsx#LanguageProvider",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "file:lib/i18n/LanguageProvider.tsx",
+      "target": "fn:lib/i18n/LanguageProvider.tsx#useLanguage",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "file:lib/i18n/LanguageProvider.tsx",
+      "target": "file:lib/i18n/en.ts",
+      "type": "imports",
+      "direction": "forward",
+      "description": "imports { en }",
+      "weight": 0.7
+    },
+    {
+      "source": "file:lib/i18n/LanguageProvider.tsx",
+      "target": "file:lib/i18n/ar.ts",
+      "type": "imports",
+      "direction": "forward",
+      "description": "imports { ar }",
+      "weight": 0.7
+    },
+    {
+      "source": "file:lib/utils.ts",
+      "target": "fn:lib/utils.ts#cn",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 0.9
+    }
+  ],
+  "layers": [
+    {
+      "id": "layer:config",
+      "name": "Config",
+      "description": "Configuration, environment setup, and constants",
+      "nodeIds": [
+        "file:eslint.config.mjs",
+        "file:next.config.ts",
+        "file:postcss.config.mjs"
+      ]
+    },
+    {
+      "id": "layer:types",
+      "name": "Types",
+      "description": "Type definitions, interfaces, and enums",
+      "nodeIds": [
+        "file:next-env.d.ts"
+      ]
+    },
+    {
+      "id": "layer:service",
+      "name": "Service",
+      "description": "Business logic, services, and use cases",
+      "nodeIds": [
+        "file:components/pages/landing_page/services/components/ServicesCards.tsx",
+        "file:components/pages/landing_page/services/components/ServicesHeader.tsx",
+        "file:components/pages/landing_page/services/Services.tsx"
+      ]
+    },
+    {
+      "id": "layer:ui",
+      "name": "UI",
+      "description": "React components, pages, layouts, and views",
+      "nodeIds": [
+        "file:components/pages/landing_page/about/About.tsx",
+        "file:components/pages/landing_page/about/components/AboutCards.tsx",
+        "file:components/pages/landing_page/about/components/AboutHeader.tsx",
+        "file:components/pages/landing_page/about/components/AboutStats.tsx",
+        "file:components/pages/landing_page/contact/components/ContactForm.tsx",
+        "file:components/pages/landing_page/contact/components/ContactHeader.tsx",
+        "file:components/pages/landing_page/contact/components/ContactInfo.tsx",
+        "file:components/pages/landing_page/contact/Contact.tsx",
+        "file:components/pages/landing_page/cta/Cta.tsx",
+        "file:components/pages/landing_page/faq/components/FaqAccordion.tsx",
+        "file:components/pages/landing_page/faq/components/FaqContent.tsx",
+        "file:components/pages/landing_page/faq/components/FaqImage.tsx",
+        "file:components/pages/landing_page/faq/Faq.tsx",
+        "file:components/pages/landing_page/footer/Footer.tsx",
+        "file:components/pages/landing_page/hero/components/HeroContent.tsx",
+        "file:components/pages/landing_page/hero/components/HeroGraphic.tsx",
+        "file:components/pages/landing_page/hero/Hero.tsx",
+        "file:components/pages/landing_page/navbar/components/NavActions.tsx",
+        "file:components/pages/landing_page/navbar/components/NavLinks.tsx",
+        "file:components/pages/landing_page/navbar/components/NavLogo.tsx",
+        "file:components/pages/landing_page/navbar/Navbar.tsx",
+        "file:components/pages/landing_page/partners/PartnersMarquee.tsx",
+        "file:components/ui/CountUp.tsx",
+        "file:components/ui/TiltCard.tsx"
+      ]
+    },
+    {
+      "id": "layer:styles",
+      "name": "Styles",
+      "description": "CSS, SCSS, styling files, and design tokens",
+      "nodeIds": [
+        "file:app/globals.css"
+      ]
+    },
+    {
+      "id": "layer:core",
+      "name": "Core",
+      "description": "Core layer",
+      "nodeIds": [
+        "file:.eslintrc.json",
+        "file:app/layout.tsx",
+        "file:app/page.tsx",
+        "file:components/SmoothScroll.tsx",
+        "file:components/ThemeProvider.tsx",
+        "file:docs/changelog.md",
+        "file:docs/plans/2026-04-22-animations-and-theming.md",
+        "file:hooks/use-mobile.ts",
+        "file:lib/i18n/ar.ts",
+        "file:lib/i18n/en.ts",
+        "file:lib/i18n/LanguageProvider.tsx",
+        "file:lib/utils.ts",
+        "file:metadata.json",
+        "file:package-lock.json",
+        "file:package.json",
+        "file:README.md",
+        "file:tsconfig.json"
+      ]
+    }
+  ],
+  "tour": [
+    {
+      "order": 1,
+      "title": "Config Layer",
+      "description": "Explore the config layer: eslint.config.mjs, next.config.ts, postcss.config.mjs",
+      "nodeIds": [
+        "file:eslint.config.mjs",
+        "file:next.config.ts",
+        "file:postcss.config.mjs"
+      ]
+    },
+    {
+      "order": 2,
+      "title": "Types Layer",
+      "description": "Explore the types layer: next-env.d.ts",
+      "nodeIds": [
+        "file:next-env.d.ts"
+      ]
+    },
+    {
+      "order": 3,
+      "title": "Service Layer",
+      "description": "Explore the service layer: ServicesCards.tsx, ServicesHeader.tsx, Services.tsx",
+      "nodeIds": [
+        "file:components/pages/landing_page/services/components/ServicesCards.tsx",
+        "file:components/pages/landing_page/services/components/ServicesHeader.tsx",
+        "file:components/pages/landing_page/services/Services.tsx"
+      ]
+    },
+    {
+      "order": 4,
+      "title": "UI Layer",
+      "description": "Explore the ui layer: AboutCards.tsx, AboutHeader.tsx, AboutStats.tsx, ContactForm.tsx, ContactHeader.tsx (+19 more)",
+      "nodeIds": [
+        "file:components/pages/landing_page/about/components/AboutCards.tsx",
+        "file:components/pages/landing_page/about/components/AboutHeader.tsx",
+        "file:components/pages/landing_page/about/components/AboutStats.tsx",
+        "file:components/pages/landing_page/contact/components/ContactForm.tsx",
+        "file:components/pages/landing_page/contact/components/ContactHeader.tsx",
+        "file:components/pages/landing_page/contact/components/ContactInfo.tsx",
+        "file:components/pages/landing_page/cta/Cta.tsx",
+        "file:components/pages/landing_page/faq/components/FaqAccordion.tsx",
+        "file:components/pages/landing_page/faq/components/FaqImage.tsx",
+        "file:components/pages/landing_page/footer/Footer.tsx",
+        "file:components/pages/landing_page/hero/components/HeroContent.tsx",
+        "file:components/pages/landing_page/hero/components/HeroGraphic.tsx",
+        "file:components/pages/landing_page/navbar/components/NavActions.tsx",
+        "file:components/pages/landing_page/navbar/components/NavLinks.tsx",
+        "file:components/pages/landing_page/navbar/components/NavLogo.tsx",
+        "file:components/pages/landing_page/partners/PartnersMarquee.tsx",
+        "file:components/ui/CountUp.tsx",
+        "file:components/ui/TiltCard.tsx",
+        "file:components/pages/landing_page/about/About.tsx",
+        "file:components/pages/landing_page/contact/Contact.tsx",
+        "file:components/pages/landing_page/faq/components/FaqContent.tsx",
+        "file:components/pages/landing_page/hero/Hero.tsx",
+        "file:components/pages/landing_page/navbar/Navbar.tsx",
+        "file:components/pages/landing_page/faq/Faq.tsx"
+      ]
+    },
+    {
+      "order": 5,
+      "title": "Styles Layer",
+      "description": "Explore the styles layer: globals.css",
+      "nodeIds": [
+        "file:app/globals.css"
+      ]
+    },
+    {
+      "order": 6,
+      "title": "Core Layer",
+      "description": "Explore the core layer: .eslintrc.json, layout.tsx, page.tsx, SmoothScroll.tsx, ThemeProvider.tsx (+12 more)",
+      "nodeIds": [
+        "file:.eslintrc.json",
+        "file:app/layout.tsx",
+        "file:app/page.tsx",
+        "file:components/SmoothScroll.tsx",
+        "file:components/ThemeProvider.tsx",
+        "file:docs/changelog.md",
+        "file:docs/plans/2026-04-22-animations-and-theming.md",
+        "file:hooks/use-mobile.ts",
+        "file:lib/i18n/ar.ts",
+        "file:lib/i18n/en.ts",
+        "file:lib/utils.ts",
+        "file:metadata.json",
+        "file:package-lock.json",
+        "file:package.json",
+        "file:README.md",
+        "file:tsconfig.json",
+        "file:lib/i18n/LanguageProvider.tsx"
+      ]
+    }
+  ]
+}
