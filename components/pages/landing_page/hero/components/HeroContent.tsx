@@ -76,7 +76,7 @@ export function HeroContent() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.6 }}
-          className="bg-clip-text text-transparent bg-gradient-to-r from-[#2dc5f4] to-[#12e399] block"
+          className="bg-clip-text text-transparent bg-gradient-to-r from-[#2dc5f4] to-[#12e399] block pb-2"
         >
           {t.hero.headingLine2}
         </motion.span>

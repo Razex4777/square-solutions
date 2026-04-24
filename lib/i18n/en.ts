@@ -85,6 +85,9 @@ export const en = {
       marketing: "Digital Marketing",
       social: "Social Media Management",
     },
+    successMessage: "Your message has been sent successfully! We'll get back to you within 24 hours.",
+    errorRequired: "Please fill in all required fields.",
+    sent: "Sent!",
   },
 
   // FAQ

@@ -13,21 +13,18 @@ export function ContactInfo() {
       label: t.contact.emailLabel,
       value: "Info@Sq-Solution.Com",
       isLink: false,
-      highlight: false,
     },
     {
       icon: <Facebook className="w-5 h-5 text-[var(--color-accent)]" />,
       label: t.contact.facebookLabel,
       value: "Square Solutions",
       isLink: true,
-      highlight: true,
     },
     {
       icon: <Linkedin className="w-5 h-5 text-[var(--color-accent)]" />,
       label: t.contact.linkedinLabel,
       value: "Square Solutions",
       isLink: true,
-      highlight: false,
     }
   ];
 
@@ -38,11 +35,7 @@ export function ContactInfo() {
           key={idx}
           whileHover={{ x: 4 }}
           transition={{ type: "spring", stiffness: 400, damping: 25 }}
-          className={`flex items-center gap-4 py-4 px-5 rounded-xl bg-[var(--color-surface-elevated)] border transition-colors duration-300 ${
-            card.highlight
-              ? 'border-[var(--color-accent)] shadow-[inset_0_0_20px_var(--color-glow)]'
-              : 'border-[var(--color-border)] hover:border-[var(--color-accent)]/50'
-          }`}
+          className="flex items-center gap-4 py-4 px-5 rounded-xl bg-[var(--color-surface-elevated)] border border-[var(--color-border)] hover:border-[var(--color-accent)]/50 transition-colors duration-300"
         >
           {/* Icon Box */}
           <div className="w-10 h-10 rounded-lg bg-[var(--color-surface-card)] border border-[var(--color-border)] flex items-center justify-center shrink-0">

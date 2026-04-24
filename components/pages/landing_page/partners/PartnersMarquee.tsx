@@ -55,8 +55,8 @@ export function PartnersMarquee() {
         }}
       >
         <div className="flex w-max items-center gap-12 md:gap-16 py-2 pr-12 md:pr-16 animate-marquee-scroll">
-          {/* Render twice to create seamless loop */}
-          {[...services, ...services].map((service, index) => {
+          {/* Render 4x to guarantee seamless infinite loop on all screen sizes */}
+          {[...services, ...services, ...services, ...services].map((service, index) => {
             const Icon = SERVICE_ICONS[index % SERVICE_ICONS.length];
             return (
               <div
