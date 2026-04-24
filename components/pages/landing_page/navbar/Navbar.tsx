@@ -38,7 +38,7 @@ export function Navbar() {
             : 'bg-transparent border-b border-transparent'
         }`}
       >
-        <div className="w-full max-w-[1600px] mx-auto px-4 sm:px-8 md:px-12 lg:px-20 h-20 flex items-center justify-between">
+        <div className="w-full max-w-[1600px] mx-auto px-4 sm:px-8 md:px-12 lg:px-20 py-4 md:py-6 flex items-center justify-between">
           <NavLogo />
           <NavLinks />
           <div className="flex items-center gap-1.5 sm:gap-3 shrink-0">

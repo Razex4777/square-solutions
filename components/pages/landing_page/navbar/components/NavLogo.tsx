@@ -9,7 +9,7 @@ export function NavLogo() {
         alt="Square Solutions Logo"
         width={500}
         height={500}
-        className="object-contain h-10 sm:h-12 md:h-14 w-auto hidden dark:block"
+        className="object-contain h-16 sm:h-20 md:h-28 w-auto hidden dark:block"
         priority
       />
       {/* Light mode logo (black text) */}
@@ -18,7 +18,7 @@ export function NavLogo() {
         alt="Square Solutions Logo"
         width={500}
         height={500}
-        className="object-contain h-10 sm:h-12 md:h-14 w-auto block dark:hidden"
+        className="object-contain h-16 sm:h-20 md:h-28 w-auto block dark:hidden"
         priority
       />
     </div>
