@@ -33,7 +33,7 @@ export function Footer() {
                <motion.button
                  whileHover={{ scale: 1.1, y: -2 }}
                  whileTap={{ scale: 0.95 }}
-                 className="w-10 h-10 rounded-lg shadow-lg bg-gradient-to-br from-[#2dc5f4] to-[#12e399] flex items-center justify-center text-black hover:brightness-110 transition-all"
+                 className="w-10 h-10 rounded-lg border border-[var(--color-border)] bg-[var(--color-surface-elevated)] flex items-center justify-center text-[var(--color-accent)] hover:bg-[var(--color-accent)]/5 transition-all"
                >
                   <Facebook className="w-5 h-5 fill-current" />
                </motion.button>
