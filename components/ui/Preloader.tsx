@@ -44,10 +44,10 @@ export function Preloader() {
             initial={{ scale: 0.9, opacity: 0, filter: "blur(10px)" }}
             animate={{ scale: 1, opacity: 1, filter: "blur(0px)" }}
             transition={{ duration: 1.2, ease: "easeOut" }}
-            className="relative w-[200px] sm:w-[280px] h-[80px] z-10"
+            className="relative w-[320px] sm:w-[420px] h-[140px] sm:h-[180px] z-10"
           >
             <Image
-              src="/logo-light.webp"
+              src="/logo.png"
               alt="Square Solutions"
               fill
               className="object-contain"
