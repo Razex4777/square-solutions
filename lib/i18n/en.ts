@@ -11,7 +11,7 @@ export const en = {
 
   // Hero
   hero: {
-    badge: "Your Digital Transformation Partner Since 2025",
+    badge: "Your Technical Partner For Growth",
     headingLine1: "Engineering The Digital",
     headingLine2: "Future Of Your Business",
     description: "From Custom Software Solutions To Managed IT Infrastructure And Digital Marketing. We Deliver A Complete Technology Ecosystem That Accelerates Growth And Gives You A Real Competitive Edge.",
@@ -24,7 +24,7 @@ export const en = {
     badge: "Our Story",
     headingLine1: "From A Local Idea To A ",
     headingLine2: "Regional Tech Partner",
-    description: "For More Than Two Years, We Have Been Building Systems, Managing Infrastructure, And Launching Digital Marketing Campaigns For Businesses Of All Sizes.",
+    description: "We Build Systems, Manage Infrastructure, And Lead Digital Marketing With Practical Expertise That Serves Businesses Of All Sizes And Drives Their Growth.",
     missionTitle: "Our Mission",
     missionDesc: "To Be A Trusted, All-In-One Solutions Provider That Transforms Innovative Ideas And Business Models Into Impactful Digital And Cloud-Based Solutions. We Aim To Align Every Project With Cutting-Edge Technologies And Our Clients' Success, Enabling Sustainable Growth Through Digital Transformation.",
     visionTitle: "Our Vision",
@@ -39,9 +39,9 @@ export const en = {
 
   // Services
   services: {
-    headingLine1: "End-To-End Solutions That ",
-    headingLine2: "Move You Forward",
-    description: "We Don't Believe In Off-The-Shelf Solutions. Every Service Is Custom-Tailored To Fit Your Business, Address Your Real Challenges, And Achieve Your Goals With Precision.",
+    headingLine1: "An Integrated Ecosystem For Your Growth… ",
+    headingLine2: "Under One Roof",
+    description: "We Offer A Complete Digital Ecosystem Combining Software, Infrastructure, And Marketing, Specifically Tailored To Fit Your Business Nature And Achieve Its Goals.",
     softwareTitle: "Software Applications & Solutions",
     softwareDesc: "We Design And Develop Smart, Scalable Software Solutions And Web Applications Tailored To Your Business Needs.",
     consultingTitle: "Consulting Services",
@@ -59,9 +59,9 @@ export const en = {
   // Contact
   contact: {
     badge: "Get In Touch",
-    headingLine1: "Ready To Start Your ",
-    headingLine2: "Digital Journey?",
-    description: "Tell Us About Your Project Or The Challenge You're Facing. Our Consulting Team Will Reach Out Within 24 Hours To Schedule A Free Consultation And Create A Custom Action Plan.",
+    headingLine1: "Have An Idea? ",
+    headingLine2: "Let's Make It Real Together!",
+    description: "Share Your Needs With Us, And Our Team Will Reach Out Within 24 Hours For A Free Consultation And A Clear Action Plan That Drives Your Idea To Success.",
     emailLabel: "Email",
     facebookLabel: "Facebook",
     linkedinLabel: "Linkedin",
@@ -95,7 +95,7 @@ export const en = {
     description: "Clear And Direct Answers To The Questions Our Clients Ask Before Starting Their Partnership With Us.",
     q1: "Do You Follow A Specific Methodology For Project Development?",
     a1: "Yes, We Adopt An Agile Methodology To Guarantee On-Time Delivery, Adaptability To Changes, And Maximum Customer Satisfaction.",
-    q2: "What Core Services Does Square Solution Provide?",
+    q2: "What Core Services Does Square Solutions Provide?",
     a2: "We offer end-to-end digital solutions including custom software development, digital marketing, IT managed services, cloud infrastructure, and consulting to transform your business operations.",
     q3: "Can You Help Startups With Limited Budgets?",
     a3: "Absolutely. We work closely with startups to prioritize essential features, outline MVP strategies, and deliver cost-effective solutions without compromising on quality.",
@@ -108,16 +108,16 @@ export const en = {
   // CTA
   cta: {
     badge: "Get In Touch",
-    headingLine1: "Ready To Take Your Business ",
-    headingLine2: "To The Next Level?",
-    description: "Start With A Free Consultation — We'll Understand Your Challenges And Map Out A Clear Plan, No Strings Attached.",
+    headingLine1: "Start Now With One Step ",
+    headingLine2: "Towards Greater Growth.",
+    description: "A Free Consultation To Understand Your Challenges And Turn Them Into A Clear, Actionable Plan—With No Commitment.",
     ctaPrimary: "Book Your Free Consultation",
     ctaSecondary: "Explore Our Services",
   },
 
   // Footer
   footer: {
-    description: "At Square Solution, We Create Lasting Value For Businesses By Building And Elevating Their Brands Through Impactful Digital Solutions.",
+    description: "At Square Solutions, We Create Lasting Value For Businesses By Building And Elevating Their Brands Through Impactful Digital Solutions.",
     followUs: "Follow Us On",
     company: "Company",
     companyLinks: ["Home", "Our Story", "Contact Us", "FAQ"],
@@ -125,6 +125,6 @@ export const en = {
     serviceLinks: ["Software Solutions", "Consulting Services", "Digital Marketing", "Social Media Management"],
     newsletter: "Newsletter",
     emailPlaceholder: "Enter Your Email",
-    copyright: "© 2026 Square Solution. All Rights Reserved.",
+    copyright: "© 2026 Square Solutions. All Rights Reserved.",
   },
 };

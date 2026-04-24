@@ -10,14 +10,6 @@ export function AboutStats() {
 
   const stats = [
     {
-      icon: Calendar,
-      value: 2,
-      suffix: '+',
-      label: t.about.statsYears,
-      color: '#2dc5f4',
-      spotlightColor: 'rgba(45, 197, 244, 0.1)',
-    },
-    {
       icon: FolderCheck,
       value: 50,
       suffix: '+',
@@ -30,22 +22,22 @@ export function AboutStats() {
       value: 30,
       suffix: '+',
       label: t.about.statsClients,
-      color: '#a855f7',
-      spotlightColor: 'rgba(168, 85, 247, 0.1)',
+      color: '#2dc5f4',
+      spotlightColor: 'rgba(45, 197, 244, 0.1)',
     },
     {
       icon: Handshake,
       value: 100,
       suffix: '%',
       label: t.about.statsCommitment,
-      color: '#fb923c',
-      spotlightColor: 'rgba(251, 146, 60, 0.1)',
+      color: '#12e399',
+      spotlightColor: 'rgba(18, 227, 153, 0.1)',
     },
   ];
 
   return (
     <div
-      className="grid grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-6 w-full mt-14 pt-14 border-t border-[var(--color-border)]"
+      className="grid grid-cols-1 md:grid-cols-3 gap-4 lg:gap-6 w-full mt-14 pt-14 border-t border-[var(--color-border)]"
       style={{ perspective: '1000px' }}
     >
       {stats.map((stat, idx) => (

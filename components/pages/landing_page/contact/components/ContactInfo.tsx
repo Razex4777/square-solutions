@@ -38,14 +38,14 @@ export function ContactInfo() {
           key={idx}
           whileHover={{ x: 4 }}
           transition={{ type: "spring", stiffness: 400, damping: 25 }}
-          className={`flex items-center py-4 px-5 rounded-xl bg-[var(--color-surface-elevated)] border transition-colors duration-300 ${
+          className={`flex items-center gap-4 py-4 px-5 rounded-xl bg-[var(--color-surface-elevated)] border transition-colors duration-300 ${
             card.highlight
               ? 'border-[var(--color-accent)] shadow-[inset_0_0_20px_var(--color-glow)]'
               : 'border-[var(--color-border)] hover:border-[var(--color-accent)]/50'
           }`}
         >
           {/* Icon Box */}
-          <div className="w-10 h-10 rounded-lg bg-[var(--color-surface-card)] border border-[var(--color-border)] flex items-center justify-center shrink-0 mr-4">
+          <div className="w-10 h-10 rounded-lg bg-[var(--color-surface-card)] border border-[var(--color-border)] flex items-center justify-center shrink-0">
             {card.icon}
           </div>
 
