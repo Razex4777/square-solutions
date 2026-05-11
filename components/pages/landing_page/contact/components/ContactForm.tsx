@@ -2,6 +2,8 @@
 
 import { useState, useRef, useEffect, useCallback } from 'react';
 import { ChevronDown, Check, Loader2, CheckCircle2, XCircle } from 'lucide-react';
+import { PhoneInput } from 'react-international-phone';
+import 'react-international-phone/style.css';
 import { useLanguage } from '@/lib/i18n/LanguageProvider';
 
 type FormStatus = 'idle' | 'submitting' | 'success' | 'error';
@@ -188,16 +190,41 @@ export function ContactForm() {
             />
           </div>
 
-          {/* Phone Number */}
+          {/* Phone Number — International Phone Input with Country Code Dropdown */}
           <div className="flex flex-col gap-2">
             <label className="text-[var(--color-text-primary)] font-medium px-1">{t.contact.phone}</label>
-            <input 
-              type="text"
+            <PhoneInput
+              defaultCountry="sa"
+              forceDialCode={true}
               value={formData.phone}
-              onChange={e => updateField('phone', e.target.value)}
-              placeholder={t.contact.phonePlaceholder}
+              onChange={(phone) => updateField('phone', phone)}
               disabled={isDisabled}
-              className="w-full bg-[var(--color-input-bg)] border border-[var(--color-input-border)] rounded-lg px-4 py-3.5 text-[var(--color-text-primary)] placeholder-[var(--color-text-muted)] focus:outline-none focus:border-[var(--color-accent)] transition-all focus:shadow-[0_0_15px_var(--color-glow)] disabled:opacity-50"
+              placeholder={t.contact.phonePlaceholder}
+              inputProps={{
+                id: 'phone-input',
+              }}
+              style={{
+                '--react-international-phone-height': '48px',
+                '--react-international-phone-background-color': 'var(--color-input-bg)',
+                '--react-international-phone-text-color': 'var(--color-text-primary)',
+                '--react-international-phone-font-size': '15px',
+                '--react-international-phone-border-radius': '8px',
+                '--react-international-phone-border-color': 'var(--color-input-border)',
+                '--react-international-phone-disabled-background-color': 'var(--color-input-bg)',
+                '--react-international-phone-disabled-text-color': 'var(--color-text-muted)',
+                '--react-international-phone-country-selector-background-color-hover': 'var(--color-surface-card)',
+                '--react-international-phone-dropdown-item-background-color-hover': 'var(--color-surface-card)',
+                '--react-international-phone-selected-dropdown-item-background-color': 'var(--color-surface-card)',
+              } as React.CSSProperties}
+              className="phone-input-themed"
+              inputClassName="phone-input-field"
+              countrySelectorStyleProps={{
+                buttonClassName: 'phone-country-button',
+                dropdownStyleProps: {
+                  className: 'phone-country-dropdown',
+                  listItemClassName: 'phone-country-item',
+                },
+              }}
             />
           </div>
 

@@ -4,8 +4,8 @@
     "name": "square-solutions",
     "languages": [
       "json",
-      "css",
       "typescript",
+      "css",
       "markdown",
       "javascript"
     ],
@@ -13,9 +13,9 @@
       "React",
       "Next.js"
     ],
-    "description": "square-solutions — json, css, typescript, markdown, javascript project with 49 files",
-    "analyzedAt": "2026-04-24T09:50:46.082Z",
-    "gitCommitHash": "a045549e1c2330f696e4d0128c1168cbf9b7b582"
+    "description": "square-solutions — json, typescript, css, markdown, javascript project with 53 files",
+    "analyzedAt": "2026-04-27T16:48:40.430Z",
+    "gitCommitHash": "a2b5e17ed4bf01ebdd4d8b2b3901ae31f9f2b92f"
   },
   "nodes": [
     {
@@ -29,6 +29,82 @@
         "json"
       ],
       "complexity": "simple"
+    },
+    {
+      "id": "file:app/api/contact/route.ts",
+      "type": "file",
+      "name": "route.ts",
+      "filePath": "app/api/contact/route.ts",
+      "summary": "route.ts — typescript source file",
+      "tags": [
+        "typescript",
+        "ts"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "fn:app/api/contact/route.ts#validatePayload",
+      "type": "function",
+      "name": "validatePayload",
+      "filePath": "app/api/contact/route.ts",
+      "lineRange": [
+        25,
+        49
+      ],
+      "summary": "validatePayload(body): ContactPayload",
+      "tags": [
+        "function",
+        "typescript"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "fn:app/api/contact/route.ts#buildEmailHtml",
+      "type": "function",
+      "name": "buildEmailHtml",
+      "filePath": "app/api/contact/route.ts",
+      "lineRange": [
+        51,
+        97
+      ],
+      "summary": "buildEmailHtml(data): string",
+      "tags": [
+        "function",
+        "typescript"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "fn:app/api/contact/route.ts#escapeHtml",
+      "type": "function",
+      "name": "escapeHtml",
+      "filePath": "app/api/contact/route.ts",
+      "lineRange": [
+        99,
+        106
+      ],
+      "summary": "escapeHtml(str): string",
+      "tags": [
+        "function",
+        "typescript"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "fn:app/api/contact/route.ts#POST",
+      "type": "function",
+      "name": "POST",
+      "filePath": "app/api/contact/route.ts",
+      "lineRange": [
+        108,
+        144
+      ],
+      "summary": "POST(request)",
+      "tags": [
+        "function",
+        "typescript"
+      ],
+      "complexity": "moderate"
     },
     {
       "id": "file:app/globals.css",
@@ -169,7 +245,7 @@
       "filePath": "components/pages/landing_page/about/components/AboutStats.tsx",
       "lineRange": [
         8,
-        99
+        91
       ],
       "summary": "AboutStats()",
       "tags": [
@@ -188,7 +264,7 @@
         "typescript",
         "tsx"
       ],
-      "complexity": "moderate"
+      "complexity": "complex"
     },
     {
       "id": "fn:components/pages/landing_page/contact/components/ContactForm.tsx#ContactForm",
@@ -196,8 +272,8 @@
       "name": "ContactForm",
       "filePath": "components/pages/landing_page/contact/components/ContactForm.tsx",
       "lineRange": [
-        7,
-        266
+        25,
+        375
       ],
       "summary": "ContactForm()",
       "tags": [
@@ -253,7 +329,7 @@
       "filePath": "components/pages/landing_page/contact/components/ContactInfo.tsx",
       "lineRange": [
         7,
-        67
+        59
       ],
       "summary": "ContactInfo()",
       "tags": [
@@ -449,7 +525,7 @@
       "filePath": "components/pages/landing_page/footer/Footer.tsx",
       "lineRange": [
         8,
-        110
+        119
       ],
       "summary": "Footer()",
       "tags": [
@@ -649,14 +725,14 @@
       "filePath": "components/pages/landing_page/navbar/components/NavLogo.tsx",
       "lineRange": [
         3,
-        16
+        26
       ],
       "summary": "NavLogo()",
       "tags": [
         "function",
         "typescript"
       ],
-      "complexity": "simple"
+      "complexity": "moderate"
     },
     {
       "id": "file:components/pages/landing_page/navbar/Navbar.tsx",
@@ -699,13 +775,29 @@
       "complexity": "moderate"
     },
     {
+      "id": "fn:components/pages/landing_page/partners/PartnersMarquee.tsx#MarqueeItem",
+      "type": "function",
+      "name": "MarqueeItem",
+      "filePath": "components/pages/landing_page/partners/PartnersMarquee.tsx",
+      "lineRange": [
+        23,
+        23
+      ],
+      "summary": "MarqueeItem({, index)",
+      "tags": [
+        "function",
+        "typescript"
+      ],
+      "complexity": "simple"
+    },
+    {
       "id": "fn:components/pages/landing_page/partners/PartnersMarquee.tsx#PartnersMarquee",
       "type": "function",
       "name": "PartnersMarquee",
       "filePath": "components/pages/landing_page/partners/PartnersMarquee.tsx",
       "lineRange": [
-        23,
-        77
+        35,
+        94
       ],
       "summary": "PartnersMarquee()",
       "tags": [
@@ -733,7 +825,7 @@
       "filePath": "components/pages/landing_page/services/components/ServicesCards.tsx",
       "lineRange": [
         7,
-        90
+        75
       ],
       "summary": "ServicesCards()",
       "tags": [
@@ -867,6 +959,34 @@
       "complexity": "moderate"
     },
     {
+      "id": "file:components/ui/Preloader.tsx",
+      "type": "file",
+      "name": "Preloader.tsx",
+      "filePath": "components/ui/Preloader.tsx",
+      "summary": "Preloader.tsx — typescript source file",
+      "tags": [
+        "typescript",
+        "tsx"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "fn:components/ui/Preloader.tsx#Preloader",
+      "type": "function",
+      "name": "Preloader",
+      "filePath": "components/ui/Preloader.tsx",
+      "lineRange": [
+        7,
+        86
+      ],
+      "summary": "Preloader()",
+      "tags": [
+        "function",
+        "typescript"
+      ],
+      "complexity": "complex"
+    },
+    {
       "id": "file:components/ui/TiltCard.tsx",
       "type": "file",
       "name": "TiltCard.tsx",
@@ -901,6 +1021,18 @@
         "md"
       ],
       "complexity": "simple"
+    },
+    {
+      "id": "file:docs/project_structure.md",
+      "type": "file",
+      "name": "project_structure.md",
+      "filePath": "docs/project_structure.md",
+      "summary": "project_structure.md — markdown source file",
+      "tags": [
+        "markdown",
+        "md"
+      ],
+      "complexity": "moderate"
     },
     {
       "id": "file:eslint.config.mjs",
@@ -1111,16 +1243,32 @@
       "complexity": "simple"
     },
     {
-      "id": "file:README.md",
+      "id": "file:scratch/convert_logo.js",
       "type": "file",
-      "name": "README.md",
-      "filePath": "README.md",
-      "summary": "README.md — markdown source file",
+      "name": "convert_logo.js",
+      "filePath": "scratch/convert_logo.js",
+      "summary": "convert_logo.js — javascript source file",
       "tags": [
-        "markdown",
-        "md"
+        "javascript",
+        "js"
       ],
-      "complexity": "simple"
+      "complexity": "moderate"
+    },
+    {
+      "id": "fn:scratch/convert_logo.js#processLogo",
+      "type": "function",
+      "name": "processLogo",
+      "filePath": "scratch/convert_logo.js",
+      "lineRange": [
+        4,
+        52
+      ],
+      "summary": "processLogo()",
+      "tags": [
+        "function",
+        "javascript"
+      ],
+      "complexity": "complex"
     },
     {
       "id": "file:tsconfig.json",
@@ -1133,9 +1281,49 @@
         "json"
       ],
       "complexity": "simple"
+    },
+    {
+      "id": "file:vercel.json",
+      "type": "file",
+      "name": "vercel.json",
+      "filePath": "vercel.json",
+      "summary": "vercel.json — json source file",
+      "tags": [
+        "json",
+        "json"
+      ],
+      "complexity": "simple"
     }
   ],
   "edges": [
+    {
+      "source": "file:app/api/contact/route.ts",
+      "target": "fn:app/api/contact/route.ts#validatePayload",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "file:app/api/contact/route.ts",
+      "target": "fn:app/api/contact/route.ts#buildEmailHtml",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "file:app/api/contact/route.ts",
+      "target": "fn:app/api/contact/route.ts#escapeHtml",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "file:app/api/contact/route.ts",
+      "target": "fn:app/api/contact/route.ts#POST",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 0.9
+    },
     {
       "source": "file:components/pages/landing_page/about/About.tsx",
       "target": "fn:components/pages/landing_page/about/About.tsx#About",
@@ -1411,6 +1599,13 @@
     },
     {
       "source": "file:components/pages/landing_page/partners/PartnersMarquee.tsx",
+      "target": "fn:components/pages/landing_page/partners/PartnersMarquee.tsx#MarqueeItem",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "file:components/pages/landing_page/partners/PartnersMarquee.tsx",
       "target": "fn:components/pages/landing_page/partners/PartnersMarquee.tsx#PartnersMarquee",
       "type": "contains",
       "direction": "forward",
@@ -1468,6 +1663,13 @@
       "weight": 0.9
     },
     {
+      "source": "file:components/ui/Preloader.tsx",
+      "target": "fn:components/ui/Preloader.tsx#Preloader",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
       "source": "file:hooks/use-mobile.ts",
       "target": "fn:hooks/use-mobile.ts#useIsMobile",
       "type": "contains",
@@ -1510,6 +1712,13 @@
       "type": "contains",
       "direction": "forward",
       "weight": 0.9
+    },
+    {
+      "source": "file:scratch/convert_logo.js",
+      "target": "fn:scratch/convert_logo.js#processLogo",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 0.9
     }
   ],
   "layers": [
@@ -1542,6 +1751,14 @@
       ]
     },
     {
+      "id": "layer:api",
+      "name": "API",
+      "description": "API routes, endpoints, and request handlers",
+      "nodeIds": [
+        "file:app/api/contact/route.ts"
+      ]
+    },
+    {
       "id": "layer:ui",
       "name": "UI",
       "description": "React components, pages, layouts, and views",
@@ -1569,6 +1786,7 @@
         "file:components/pages/landing_page/navbar/Navbar.tsx",
         "file:components/pages/landing_page/partners/PartnersMarquee.tsx",
         "file:components/ui/CountUp.tsx",
+        "file:components/ui/Preloader.tsx",
         "file:components/ui/TiltCard.tsx"
       ]
     },
@@ -1592,6 +1810,7 @@
         "file:components/ThemeProvider.tsx",
         "file:docs/changelog.md",
         "file:docs/plans/2026-04-22-animations-and-theming.md",
+        "file:docs/project_structure.md",
         "file:hooks/use-mobile.ts",
         "file:lib/i18n/ar.ts",
         "file:lib/i18n/en.ts",
@@ -1600,8 +1819,9 @@
         "file:metadata.json",
         "file:package-lock.json",
         "file:package.json",
-        "file:README.md",
-        "file:tsconfig.json"
+        "file:scratch/convert_logo.js",
+        "file:tsconfig.json",
+        "file:vercel.json"
       ]
     }
   ],
@@ -1636,8 +1856,16 @@
     },
     {
       "order": 4,
+      "title": "API Layer",
+      "description": "Explore the api layer: route.ts",
+      "nodeIds": [
+        "file:app/api/contact/route.ts"
+      ]
+    },
+    {
+      "order": 5,
       "title": "UI Layer",
-      "description": "Explore the ui layer: AboutCards.tsx, AboutHeader.tsx, AboutStats.tsx, ContactForm.tsx, ContactHeader.tsx (+19 more)",
+      "description": "Explore the ui layer: AboutCards.tsx, AboutHeader.tsx, AboutStats.tsx, ContactForm.tsx, ContactHeader.tsx (+20 more)",
       "nodeIds": [
         "file:components/pages/landing_page/about/components/AboutCards.tsx",
         "file:components/pages/landing_page/about/components/AboutHeader.tsx",
@@ -1656,6 +1884,7 @@
         "file:components/pages/landing_page/navbar/components/NavLogo.tsx",
         "file:components/pages/landing_page/partners/PartnersMarquee.tsx",
         "file:components/ui/CountUp.tsx",
+        "file:components/ui/Preloader.tsx",
         "file:components/ui/TiltCard.tsx",
         "file:components/pages/landing_page/about/About.tsx",
         "file:components/pages/landing_page/contact/Contact.tsx",
@@ -1666,7 +1895,7 @@
       ]
     },
     {
-      "order": 5,
+      "order": 6,
       "title": "Styles Layer",
       "description": "Explore the styles layer: globals.css",
       "nodeIds": [
@@ -1674,9 +1903,9 @@
       ]
     },
     {
-      "order": 6,
+      "order": 7,
       "title": "Core Layer",
-      "description": "Explore the core layer: .eslintrc.json, layout.tsx, page.tsx, SmoothScroll.tsx, ThemeProvider.tsx (+12 more)",
+      "description": "Explore the core layer: .eslintrc.json, layout.tsx, page.tsx, SmoothScroll.tsx, ThemeProvider.tsx (+14 more)",
       "nodeIds": [
         "file:.eslintrc.json",
         "file:app/layout.tsx",
@@ -1685,6 +1914,7 @@
         "file:components/ThemeProvider.tsx",
         "file:docs/changelog.md",
         "file:docs/plans/2026-04-22-animations-and-theming.md",
+        "file:docs/project_structure.md",
         "file:hooks/use-mobile.ts",
         "file:lib/i18n/ar.ts",
         "file:lib/i18n/en.ts",
@@ -1692,8 +1922,9 @@
         "file:metadata.json",
         "file:package-lock.json",
         "file:package.json",
-        "file:README.md",
+        "file:scratch/convert_logo.js",
         "file:tsconfig.json",
+        "file:vercel.json",
         "file:lib/i18n/LanguageProvider.tsx"
       ]
     }

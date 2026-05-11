@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { useLanguage } from "@/lib/i18n/LanguageProvider";
 
 /* Type for a floating tag in the orbital rings */
 interface OrbitTagProps {
@@ -27,6 +28,8 @@ function OrbitTag({ label, dotColor = "#12e399" }: OrbitTagProps) {
 }
 
 export function HeroGraphic() {
+  const { t } = useLanguage();
+
   return (
     <div className="relative w-full aspect-square flex items-center justify-center max-w-[600px] xl:max-w-[700px] 2xl:max-w-[800px] mx-auto md:ml-auto">
       
@@ -66,14 +69,14 @@ export function HeroGraphic() {
         {/* Tag: Software Dev */}
         <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2">
           <motion.div animate={{ rotate: -360 }} transition={{ duration: 60, repeat: Infinity, ease: "linear" }}>
-            <OrbitTag label="Software Dev" dotColor="#2dc5f4" />
+            <OrbitTag label={t.hero.orbitSoftware} dotColor="#2dc5f4" />
           </motion.div>
         </div>
 
         {/* Tag: Cloud Solutions */}
         <div className="absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1/2">
           <motion.div animate={{ rotate: -360 }} transition={{ duration: 60, repeat: Infinity, ease: "linear" }}>
-            <OrbitTag label="Cloud Solutions" dotColor="#12e399" />
+            <OrbitTag label={t.hero.orbitCloud} dotColor="#12e399" />
           </motion.div>
         </div>
       </motion.div>
@@ -89,10 +92,10 @@ export function HeroGraphic() {
         <div className="absolute top-[14.6%] right-[14.6%] translate-x-1/2 -translate-y-1/2 w-1.5 h-1.5 bg-white rounded-full shadow-[0_0_8px_white]" />
         <div className="absolute bottom-[14.6%] left-[14.6%] -translate-x-1/2 translate-y-1/2 w-2 h-2 bg-[#2dc5f4] rounded-full shadow-[0_0_10px_#2dc5f4]" />
 
-        {/* Tag: Cyber Security */}
+        {/* Tag: AI Solutions — CLIENT REQUESTED */}
         <div className="absolute top-1/2 right-0 translate-x-1/2 -translate-y-1/2">
           <motion.div animate={{ rotate: 360 }} transition={{ duration: 45, repeat: Infinity, ease: "linear" }}>
-            <OrbitTag label="Cyber Security" dotColor="#2dc5f4" />
+            <OrbitTag label={t.hero.orbitAI} dotColor="#a78bfa" />
           </motion.div>
         </div>
       </motion.div>
@@ -110,7 +113,7 @@ export function HeroGraphic() {
         {/* Tag: Marketing */}
         <div className="absolute top-1/2 left-0 -translate-x-1/2 -translate-y-1/2">
           <motion.div animate={{ rotate: -360 }} transition={{ duration: 30, repeat: Infinity, ease: "linear" }}>
-            <OrbitTag label="Marketing" dotColor="#12e399" />
+            <OrbitTag label={t.hero.orbitMarketing} dotColor="#12e399" />
           </motion.div>
         </div>
       </motion.div>

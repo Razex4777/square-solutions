@@ -5,6 +5,7 @@ import { SmoothScroll } from '@/components/SmoothScroll';
 import { ThemeProvider } from '@/components/ThemeProvider';
 import { LanguageProvider } from '@/lib/i18n/LanguageProvider';
 import { Preloader } from '@/components/ui/Preloader';
+import { AnalyticsTracker } from '@/components/AnalyticsTracker';
 import { Analytics } from '@vercel/analytics/next';
 
 const outfit = Outfit({
@@ -30,6 +31,7 @@ export default function RootLayout({children}: {children: React.ReactNode}) {
           <LanguageProvider>
             <Preloader />
             <SmoothScroll>{children}</SmoothScroll>
+            <AnalyticsTracker />
             <Analytics />
           </LanguageProvider>
         </ThemeProvider>

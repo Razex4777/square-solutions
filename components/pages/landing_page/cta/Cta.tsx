@@ -44,7 +44,7 @@ export function Cta() {
   }, { scope: container });
 
   return (
-    <section ref={container} className="relative py-24 bg-[var(--color-surface)] flex flex-col items-center w-full px-6 sm:px-8 md:px-12 lg:px-20 z-10 transition-colors duration-300">
+    <section ref={container} id="cta" className="relative py-24 bg-[var(--color-surface)] flex flex-col items-center w-full px-6 sm:px-8 md:px-12 lg:px-20 z-10 transition-colors duration-300">
       <div className="w-full max-w-[1600px] mx-auto border border-[var(--color-accent)]/30 rounded-[2rem] p-8 lg:p-20 xl:py-28 flex flex-col items-center relative overflow-hidden bg-[var(--color-surface-elevated)]/80">
 
          {/* Dropdown line & dot */}

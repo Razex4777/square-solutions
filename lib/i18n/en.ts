@@ -17,6 +17,10 @@ export const en = {
     description: "From Custom Software Solutions To Managed IT Infrastructure And Digital Marketing. We Deliver A Complete Technology Ecosystem That Accelerates Growth And Gives You A Real Competitive Edge.",
     ctaPrimary: "Start Your Digital Journey",
     ctaSecondary: "Explore Our Solutions",
+    orbitSoftware: "Software Dev",
+    orbitCloud: "Cloud Solutions",
+    orbitAI: "AI Solutions",
+    orbitMarketing: "Marketing",
   },
 
   // About
@@ -54,6 +58,7 @@ export const en = {
     marketingDesc: "We Develop Data-Driven Digital Marketing Strategies That Increase Brand Visibility, Attract Qualified Leads, And Drive Customer Engagement. From SEO To Paid Campaigns.",
     socialTitle: "Social Media Management",
     socialDesc: "Our Social Media Management Services Create A Cohesive Brand Presence Across Platforms. We Handle Content Planning, Publishing, Engagement, And Analytics To Build Meaningful.",
+    aiTitle: "AI Solutions",
   },
 
   // Contact
@@ -128,6 +133,10 @@ export const en = {
     serviceLinks: ["Software Solutions", "Consulting Services", "Digital Marketing", "Social Media Management"],
     newsletter: "Newsletter",
     emailPlaceholder: "Enter Your Email",
+    subscribe: "Subscribe",
+    subscribing: "Subscribing...",
+    subscribeSuccess: "You have been subscribed successfully!",
+    subscribeError: "Something went wrong. Please try again.",
     copyright: "© 2026 Square Solutions. All Rights Reserved.",
   },
 };

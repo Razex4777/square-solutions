@@ -9,6 +9,7 @@ import {
   CloudCog,
   Globe,
   Megaphone,
+  BrainCircuit,
 } from 'lucide-react';
 
 const SERVICE_ICONS = [
@@ -18,6 +19,7 @@ const SERVICE_ICONS = [
   CloudCog,
   Globe,
   Megaphone,
+  BrainCircuit,
 ];
 
 function MarqueeItem({ service, index }: { service: string; index: number }) {
@@ -33,7 +35,7 @@ function MarqueeItem({ service, index }: { service: string; index: number }) {
 }
 
 export function PartnersMarquee() {
-  const { t } = useLanguage();
+  const { t, isRTL } = useLanguage();
 
   const services = [
     t.services.softwareTitle,
@@ -42,19 +44,20 @@ export function PartnersMarquee() {
     t.services.infraTitle,
     t.services.marketingTitle,
     t.services.socialTitle,
+    t.services.aiTitle,
   ];
 
-  /* Build a single "set" = all 6 services. We render 6 sets total (36 items).
+  /* Build a single "set" = all 7 services. We render 6 sets total (42 items).
      The animation scrolls exactly 3 sets worth (50% of 6 sets) then resets.
      Because set 1-3 is identical to set 4-6, the loop is seamless. */
   const tripleSet = [...services, ...services, ...services];
 
   return (
-    <section className="w-full bg-[var(--color-surface)] py-10 md:py-14 overflow-hidden relative z-10 border-y border-[var(--color-border)]">
+    <section id="partners" className="w-full bg-[var(--color-surface)] py-10 md:py-14 overflow-hidden relative z-10 border-y border-[var(--color-border)]">
       <style>{`
         @keyframes marquee-loop {
           0% { transform: translateX(0%); }
-          100% { transform: translateX(-50%); }
+          100% { transform: translateX(calc(-50% * var(--direction, 1))); }
         }
         .marquee-runner {
           display: flex;
@@ -66,7 +69,8 @@ export function PartnersMarquee() {
         .marquee-runner:hover {
           animation-play-state: paused;
         }
-      `}</style>
+      `}
+      </style>
 
       <div
         className="w-full overflow-hidden"
@@ -76,7 +80,11 @@ export function PartnersMarquee() {
         }}
       >
         {/* Two identical halves: [A B C A B C] [A B C A B C] — scrolls -50% then resets */}
-        <div className="marquee-runner" aria-hidden="true">
+        <div 
+          className="marquee-runner" 
+          aria-hidden="true"
+          style={{ '--direction': isRTL ? -1 : 1 } as React.CSSProperties}
+        >
           {tripleSet.map((service, i) => (
             <MarqueeItem key={`a-${i}`} service={service} index={i} />
           ))}

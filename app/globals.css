@@ -113,3 +113,76 @@ nav {
   background-size: 40px 40px;
   opacity: 0.15;
 }
+
+/* ─────────────── Phone Input (react-international-phone) Theme ─────────────── */
+.phone-input-themed {
+  width: 100% !important;
+}
+
+.phone-input-themed .react-international-phone-input-container {
+  width: 100%;
+}
+
+.phone-input-field {
+  width: 100% !important;
+  background-color: var(--color-input-bg) !important;
+  color: var(--color-text-primary) !important;
+  border-color: var(--color-input-border) !important;
+  font-size: 15px !important;
+}
+
+.phone-input-field::placeholder {
+  color: var(--color-text-muted) !important;
+}
+
+.phone-input-field:focus {
+  border-color: var(--color-accent) !important;
+  box-shadow: 0 0 15px var(--color-glow) !important;
+}
+
+.phone-country-button {
+  background-color: var(--color-input-bg) !important;
+  border-color: var(--color-input-border) !important;
+  padding: 0 12px !important;
+}
+
+html[dir="ltr"] .phone-country-button {
+  border-top-left-radius: 8px !important;
+  border-bottom-left-radius: 8px !important;
+}
+
+html[dir="rtl"] .phone-country-button {
+  border-top-right-radius: 8px !important;
+  border-bottom-right-radius: 8px !important;
+}
+
+.phone-country-button:hover {
+  background-color: var(--color-surface-card) !important;
+}
+
+.phone-country-dropdown {
+  background-color: var(--color-surface-elevated) !important;
+  border-color: var(--color-border) !important;
+  z-index: 100 !important;
+  max-height: 300px !important;
+}
+
+.phone-country-dropdown .react-international-phone-country-selector-dropdown__search-input {
+  background-color: var(--color-input-bg) !important;
+  color: var(--color-text-primary) !important;
+  border-color: var(--color-input-border) !important;
+}
+
+.phone-country-item {
+  color: var(--color-text-secondary) !important;
+}
+
+.phone-country-item:hover,
+.phone-country-item--selected {
+  background-color: var(--color-surface-card) !important;
+  color: var(--color-text-primary) !important;
+}
+
+.phone-country-item .react-international-phone-country-selector-dropdown__list-item-dial-code {
+  color: var(--color-text-muted) !important;
+}
